@@ -93,7 +93,7 @@ export default function Contact() {
             FORMULAIRE DE CONTACT
           </span>
           <form
-            action="https://formspree.io/f/leocouchoudpro@gmail.com"
+            action="https://formspree.io/f/maqldlak"
             method="POST"
             className="flex flex-col gap-8"
           >
