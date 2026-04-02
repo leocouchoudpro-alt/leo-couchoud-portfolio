@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #000000;
+  --color-on-primary: #e2e2e2;
+  --color-primary-container: #3b3b3b;
+  --color-on-primary-container: #ffffff;
+  --color-primary-fixed: #5e5e5e;
+  --color-primary-fixed-dim: #474747;
+  --color-on-primary-fixed: #ffffff;
+  --color-on-primary-fixed-variant: #e2e2e2;
+  --color-inverse-primary: #c6c6c6;
+
+  --color-secondary: #5f5e5e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d6d4d3;
+  --color-on-secondary-container: #1b1c1c;
+  --color-secondary-fixed: #c8c6c5;
+  --color-secondary-fixed-dim: #adabaa;
+  --color-on-secondary-fixed: #1b1c1c;
+  --color-on-secondary-fixed-variant: #3c3b3b;
+
+  --color-tertiary: #3b3b3b;
+  --color-on-tertiary: #e4e2e2;
+  --color-tertiary-container: #757474;
+  --color-on-tertiary-container: #ffffff;
+  --color-tertiary-fixed: #5e5e5e;
+  --color-tertiary-fixed-dim: #464747;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-on-tertiary-fixed-variant: #e4e2e2;
+
+  --color-background: #f9f9f9;
+  --color-on-background: #1a1c1c;
+  --color-surface: #f9f9f9;
+  --color-on-surface: #1a1c1c;
+  --color-surface-variant: #e2e2e2;
+  --color-on-surface-variant: #474747;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f3;
+  --color-surface-container: #eeeeee;
+  --color-surface-container-high: #e8e8e8;
+  --color-surface-container-highest: #e2e2e2;
+  --color-surface-dim: #dadada;
+  --color-surface-bright: #f9f9f9;
+  --color-surface-tint: #5e5e5e;
+  --color-inverse-surface: #2f3131;
+  --color-inverse-on-surface: #f1f1f1;
+
+  --color-outline: #777777;
+  --color-outline-variant: #c6c6c6;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #410002;
+
+  /* Typography */
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Border radius — everything sharp */
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-full: 9999px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #1a1c1c;
+}
+
+/* Hero massive text */
+.text-hero {
+  font-size: clamp(4rem, 15vw, 20rem);
+  line-height: 0.8;
+}
+
+/* Vertical writing mode */
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+/* Outline text */
+.outline-text {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+
+/* Selection */
+::selection {
+  background-color: #000000;
+  color: #e2e2e2;
+}
