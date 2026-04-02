@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Profil — Léo Couchoud",
@@ -32,11 +33,13 @@ export default function Profil() {
       {/* Main bio */}
       <section className="py-24 px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start bg-[#f9f9f9] border-b border-[#c6c6c6]">
         <div className="md:col-span-5">
-          {/* TODO: contenu à fournir — photo professionnelle */}
-          <div className="w-full aspect-[3/4] bg-[#e2e2e2] flex items-center justify-center">
-            <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400">
-              PHOTO À FOURNIR
-            </span>
+          <div className="w-full aspect-[3/4] bg-[#f3f3f3] overflow-hidden relative">
+            <Image
+              src="/leo-couchoud.png"
+              alt="Léo Couchoud"
+              fill
+              className="object-contain object-bottom grayscale"
+            />
           </div>
         </div>
         <div className="md:col-span-7 flex flex-col gap-8 pt-4">

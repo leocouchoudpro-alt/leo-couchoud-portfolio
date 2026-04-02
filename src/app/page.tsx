@@ -1,10 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-hidden bg-white">
+        {/* Photo */}
+        <div className="absolute bottom-0 right-0 z-20 w-full md:w-1/2 h-full flex items-end justify-end pointer-events-none select-none">
+          <Image
+            src="/leo-couchoud.png"
+            alt="Léo Couchoud"
+            width={800}
+            height={1000}
+            className="w-auto h-full object-contain object-bottom"
+            priority
+          />
+        </div>
+
         {/* Massive background typography */}
         <div className="absolute inset-0 z-0 flex flex-col justify-center pointer-events-none select-none">
           <h1 className="text-hero font-black tracking-tighter uppercase text-neutral-100 leading-none">
