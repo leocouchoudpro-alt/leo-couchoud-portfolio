@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "CV — Léo Couchoud",
+  title: "CV - Léo Couchoud",
   description:
-    "Curriculum vitae de Léo Couchoud — Marketing Digital & Stratégie. Téléchargement disponible.",
+    "Curriculum vitae de Léo Couchoud - Marketing Digital & Stratégie. Téléchargement disponible.",
 };
 
 export default function CV() {
@@ -13,7 +13,7 @@ export default function CV() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          07 — CV
+          07 - CV
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           CURRI<br />CULUM
@@ -32,7 +32,7 @@ export default function CV() {
               CV_Leo_Couchoud.pdf
             </p>
           </div>
-          {/* TODO: contenu à fournir — remplacer par le vrai fichier PDF */}
+          {/* TODO: contenu à fournir - remplacer par le vrai fichier PDF */}
           <a
             href="/CV_Leo_Couchoud.pdf"
             className="bg-white text-black px-12 py-6 font-black tracking-tighter uppercase text-xl transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap flex items-center gap-4"
@@ -116,7 +116,7 @@ export default function CV() {
                 </span>
                 <div>
                   <p className="font-black tracking-tighter uppercase">BUT Techniques de Commercialisation</p>
-                  <p className="text-[#5f5e5e] text-sm">IUT Valenciennes — Parcours MDEBE · En cours</p>
+                  <p className="text-[#5f5e5e] text-sm">IUT Valenciennes - Parcours MDEBE · En cours</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8">
@@ -125,7 +125,7 @@ export default function CV() {
                 </span>
                 <div>
                   <p className="font-black tracking-tighter uppercase">Bac Pro Systèmes Numériques</p>
-                  <p className="text-[#5f5e5e] text-sm">Guadeloupe · Mention Très Bien — 16.25/20</p>
+                  <p className="text-[#5f5e5e] text-sm">Guadeloupe · Mention Très Bien - 16.25/20</p>
                 </div>
               </div>
             </div>

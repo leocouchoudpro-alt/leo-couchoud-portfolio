@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Formations — Léo Couchoud",
+  title: "Formations - Léo Couchoud",
   description:
     "Parcours académique de Léo Couchoud : BUT Techniques de Commercialisation et Bac Pro Systèmes Numériques.",
 };
@@ -12,7 +12,7 @@ export default function Formations() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          05 — FORMATIONS
+          05 - FORMATIONS
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           PARCOURS<br />ACADÉMIQUE
@@ -38,13 +38,13 @@ export default function Formations() {
           </div>
           <div className="md:col-span-9 p-8 md:p-12">
             <div className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-4 text-neutral-400">
-              IUT DE VALENCIENNES — UNIVERSITÉ POLYTECHNIQUE HAUTS-DE-FRANCE (UPHF)
+              IUT DE VALENCIENNES - UNIVERSITÉ POLYTECHNIQUE HAUTS-DE-FRANCE (UPHF)
             </div>
             <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase mb-4 leading-tight">
               BUT Techniques de Commercialisation
             </h2>
             <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e] mb-12">
-              Parcours MDEBE — Marketing Digital, e-Business & Entrepreneuriat
+              Parcours MDEBE - Marketing Digital, e-Business & Entrepreneuriat
             </p>
 
             {/* Années */}
@@ -58,10 +58,10 @@ export default function Formations() {
                   Semestre 5 validé · Inscrit S6
                 </p>
                 <div className="flex flex-col gap-1.5 text-xs text-[#5f5e5e]">
-                  <span>Marketing — <strong>12.80</strong></span>
-                  <span>Vente — <strong>13.21</strong></span>
-                  <span>Marketing Digital — <strong>13.56</strong></span>
-                  <span>E-business & Entrepreneuriat — <strong>13.68</strong></span>
+                  <span>Marketing - <strong>12.80</strong></span>
+                  <span>Vente - <strong>13.21</strong></span>
+                  <span>Marketing Digital - <strong>13.56</strong></span>
+                  <span>E-business & Entrepreneuriat - <strong>13.68</strong></span>
                 </div>
               </div>
               {/* BUT2 */}
@@ -74,8 +74,8 @@ export default function Formations() {
                 </p>
                 <div className="flex flex-col gap-1.5 text-xs text-[#5f5e5e]">
                   <span>DUT (BUT1+BUT2) validé</span>
-                  <span>S3 — ~12/20</span>
-                  <span>S4 — ~12/20</span>
+                  <span>S3 - ~12/20</span>
+                  <span>S4 - ~12/20</span>
                 </div>
               </div>
               {/* BUT1 */}
@@ -87,8 +87,8 @@ export default function Formations() {
                   Validé (ADM)
                 </p>
                 <div className="flex flex-col gap-1.5 text-xs text-[#5f5e5e]">
-                  <span>S1 — ~12/20</span>
-                  <span>S2 — ~11.5/20</span>
+                  <span>S1 - ~12/20</span>
+                  <span>S2 - ~11.5/20</span>
                 </div>
               </div>
             </div>
@@ -100,9 +100,9 @@ export default function Formations() {
                   PROJETS NOTABLES
                 </span>
                 <ul className="flex flex-col gap-2 text-[#5f5e5e]">
-                  <li className="flex gap-3"><span className="text-neutral-300 font-black">—</span>WaterBreaker (anti-inondations, domotique)</li>
-                  <li className="flex gap-3"><span className="text-neutral-300 font-black">—</span>MateBoost (marque maté commerce équitable)</li>
-                  <li className="flex gap-3"><span className="text-neutral-300 font-black">—</span>Business Game UPHF 2024 — 2ème place</li>
+                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>WaterBreaker (anti-inondations, domotique)</li>
+                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>MateBoost (marque maté commerce équitable)</li>
+                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>Business Game UPHF 2024 - 2ème place</li>
                 </ul>
               </div>
               <div>
@@ -150,7 +150,7 @@ export default function Formations() {
               Bac Pro Systèmes Numériques
             </h2>
             <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e] mb-12">
-              Option B — Audiovisuels, Réseau & Équipements Domestiques
+              Option B - Audiovisuels, Réseau & Équipements Domestiques
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-t border-l border-[#c6c6c6]">
               {[

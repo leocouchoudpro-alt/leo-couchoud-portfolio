@@ -11,11 +11,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Léo Couchoud — Marketing Digital & Stratégie",
+  title: "Léo Couchoud - Marketing Digital & Stratégie",
   description:
     "Portfolio de Léo Couchoud, profil hybride tech × management. Consultant en devenir spécialisé en SEO, IA et stratégie digitale.",
   openGraph: {
-    title: "Léo Couchoud — Marketing Digital & Stratégie",
+    title: "Léo Couchoud - Marketing Digital & Stratégie",
     description:
       "Portfolio de Léo Couchoud, profil hybride tech × management. Consultant en devenir spécialisé en SEO, IA et stratégie digitale.",
     locale: "fr_FR",

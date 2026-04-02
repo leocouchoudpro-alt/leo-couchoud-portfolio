@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Léo Couchoud",
+  title: "Portfolio - Léo Couchoud",
   description: "Projets et réalisations de Léo Couchoud : audits SEO, projets entrepreneuriaux, communication digitale.",
 };
 
@@ -11,7 +11,7 @@ const projects = [
     title: "Audits SEO & Stratégie Digitale",
     company: "TechGuys",
     location: "Montréal, Canada",
-    period: "Mars — Mai 2026",
+    period: "Mars - Mai 2026",
     tags: ["SEO Technique", "On-page", "Semrush", "Screaming Frog", "GSC"],
     desc: "Réalisation d'audits SEO complets (technique, on-page, concurrentiel), recherche de mots-clés et optimisation du référencement naturel. Rédaction web, briefs éditoriaux, suivi de positionnement et collaboration directe avec la direction.",
     results: null, // TODO: contenu à fournir
@@ -21,7 +21,7 @@ const projects = [
     title: "Marketing Digital & SEO",
     company: "Panda Communication",
     location: "Valenciennes, France",
-    period: "Mars — Mai 2025",
+    period: "Mars - Mai 2025",
     tags: ["SEO/SEA", "Automatisation IA", "Google Analytics", "WordPress"],
     desc: "Automatisation des process marketing grâce à l'IA. Rédaction et optimisation SEO de contenus web. Pilotage de campagnes SEO/SEA, développement de stratégies de mots-clés et analyse des performances.",
     results: null, // TODO: contenu à fournir
@@ -31,7 +31,7 @@ const projects = [
     title: "WaterBreaker",
     company: "Projet Entrepreneurial",
     location: "IUT de Valenciennes",
-    period: "2024 — 2025",
+    period: "2024 - 2025",
     tags: ["Business Model", "Pitch", "Analyse de marché", "Domotique"],
     desc: "Concept de start-up anti-inondations développé dans le cadre du BUT. Système de prévention basé sur la domotique. Co-conception du modèle économique, analyse de marché et pitch investisseurs.",
     results: "Modèle économique complet, étude de marché, présentation investisseurs.",
@@ -41,7 +41,7 @@ const projects = [
     title: "MateBoost",
     company: "Projet Entrepreneurial",
     location: "IUT de Valenciennes",
-    period: "2024 — 2025",
+    period: "2024 - 2025",
     tags: ["Branding", "Go-to-market", "Marketing mix", "Communication digitale"],
     desc: "Création d'une marque de maté commerce équitable. Création de l'identité de marque, plan de communication digitale et stratégie go-to-market.",
     results: "Identité de marque complète, plan de communication, stratégie de lancement.",
@@ -61,7 +61,7 @@ const projects = [
     title: "Communication Digitale GreenTC",
     company: "Association Étudiante GreenTC",
     location: "IUT de Valenciennes",
-    period: "Sept. 2024 — Sept. 2025",
+    period: "Sept. 2024 - Sept. 2025",
     tags: ["Social Media", "Stratégie de contenu", "Instagram", "Coordination"],
     desc: "Responsable Communication Digitale. Planification et exécution de campagnes Instagram, coordination d'une équipe de contributeurs, organisation d'événements associatifs.",
     results: "Augmentation de l'engagement et de la portée sur Instagram.",
@@ -74,7 +74,7 @@ export default function Portfolio() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          03 — PORTFOLIO
+          03 - PORTFOLIO
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           PROJETS &amp;<br />RÉALISATIONS
@@ -117,7 +117,7 @@ export default function Portfolio() {
               ) : (
                 <div className="border-2 border-dashed border-[#c6c6c6] p-4 inline-block">
                   <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-300">
-                    {/* TODO: contenu à fournir — métriques */}
+                    {/* TODO: contenu à fournir - métriques */}
                     RÉSULTATS À COMPLÉTER
                   </span>
                 </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Léo Couchoud",
+  title: "Contact - Léo Couchoud",
   description:
     "Contacter Léo Couchoud pour une opportunité professionnelle, une collaboration ou toute autre demande.",
 };
@@ -12,7 +12,7 @@ export default function Contact() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          08 — CONTACT
+          08 - CONTACT
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           PARLONS<br />ENSEMBLE

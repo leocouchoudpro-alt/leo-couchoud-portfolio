@@ -15,6 +15,7 @@ export default function Home() {
             height={1000}
             className="w-auto h-full object-contain object-bottom"
             priority
+            unoptimized
           />
         </div>
 
@@ -28,7 +29,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-30 max-w-4xl w-full">
           <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-6 opacity-40">
-            MARKETING DIGITAL &amp; STRATÉGIE — VOL. 01
+            MARKETING DIGITAL &amp; STRATÉGIE - VOL. 01
           </div>
           <h2 className="text-5xl md:text-8xl font-black tracking-[-0.08em] uppercase text-black leading-[0.85] mb-6">
             LÉO<br />COUCHOUD
@@ -39,7 +40,7 @@ export default function Home() {
           <div className="max-w-md bg-black text-white p-8 md:p-10 mb-12">
             <p className="text-lg md:text-xl font-light leading-relaxed italic">
               &ldquo;Comment fait-on concrètement fonctionner une entreprise ?
-              C&rsquo;est cette question qui guide mon parcours — du numérique
+              C&rsquo;est cette question qui guide mon parcours - du numérique
               au commerce, de la Guadeloupe au Canada.&rdquo;
             </p>
           </div>
@@ -112,14 +113,14 @@ export default function Home() {
         <div className="relative h-[400px] md:h-[600px] overflow-hidden group border-r border-[#c6c6c6] bg-neutral-100 flex items-center justify-center">
           <div className="text-center p-12">
             <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
-              {/* TODO: contenu à fournir — photo/image */}
+              {/* TODO: contenu à fournir - photo/image */}
             </span>
             <span className="text-6xl font-black tracking-tighter uppercase text-neutral-200">
               01
             </span>
           </div>
           <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase">
-            01 — RIGUEUR TECHNIQUE
+            01 - RIGUEUR TECHNIQUE
           </div>
         </div>
         <div className="relative h-[400px] md:h-[600px] overflow-hidden group bg-neutral-100 flex items-center justify-center">
@@ -129,7 +130,7 @@ export default function Home() {
             </span>
           </div>
           <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase">
-            02 — VISION STRATÉGIQUE
+            02 - VISION STRATÉGIQUE
           </div>
         </div>
       </section>

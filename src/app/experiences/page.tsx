@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Expériences — Léo Couchoud",
+  title: "Expériences - Léo Couchoud",
   description:
     "Parcours professionnel de Léo Couchoud : stages en SEO, consulting et marketing digital.",
 };
@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 const experiences = [
   {
     num: "01",
-    role: "Stagiaire — Intégration d'IA, SEO & Audits",
+    role: "Stagiaire - Intégration d'IA, SEO & Audits",
     company: "TechGuys",
     location: "Montréal, Canada",
-    period: "Mars 2026 — Mai 2026",
+    period: "Mars 2026 - Mai 2026",
     duration: "12 semaines · 40h/semaine",
     tasks: [
       "Audits SEO complets : technique, on-page, analyse concurrentielle",
@@ -27,10 +27,10 @@ const experiences = [
   },
   {
     num: "02",
-    role: "Stagiaire — Marketing Digital & SEO",
+    role: "Stagiaire - Marketing Digital & SEO",
     company: "Panda Communication",
     location: "Valenciennes, France",
-    period: "Mars 2025 — Mai 2025",
+    period: "Mars 2025 - Mai 2025",
     duration: "8 semaines · 32h/semaine",
     tasks: [
       "Automatisation des process marketing grâce à l'Intelligence Artificielle",
@@ -46,9 +46,9 @@ const experiences = [
   {
     num: "03",
     role: "Responsable Communication Digitale",
-    company: "GreenTC — Association Étudiante",
+    company: "GreenTC - Association Étudiante",
     location: "IUT de Valenciennes",
-    period: "Septembre 2024 — Septembre 2025",
+    period: "Septembre 2024 - Septembre 2025",
     duration: "1 an",
     tasks: [
       "Planification et exécution de campagnes Instagram : contenu, calendrier éditorial, engagement",
@@ -62,10 +62,10 @@ const experiences = [
   },
   {
     num: "04",
-    role: "Stagiaire — Vente & Merchandising",
+    role: "Stagiaire - Vente & Merchandising",
     company: "JOTT",
     location: "Valenciennes, France",
-    period: "Décembre 2023 — Janvier 2024",
+    period: "Décembre 2023 - Janvier 2024",
     duration: "4 semaines · 35h/semaine",
     tasks: [
       "Vente et conseil client : accueil, analyse des besoins et accompagnement personnalisé",
@@ -85,7 +85,7 @@ export default function Experiences() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          04 — EXPÉRIENCES
+          04 - EXPÉRIENCES
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           PARCOURS<br />PRO
@@ -102,7 +102,7 @@ export default function Experiences() {
               i % 2 === 0 ? "bg-white" : "bg-[#f3f3f3]"
             }`}
           >
-            {/* Left — index + period */}
+            {/* Left - index + period */}
             <div className="md:col-span-3 p-8 md:p-12 border-r border-[#c6c6c6] flex flex-col justify-between gap-8">
               <div>
                 <span className="text-xs font-black uppercase tracking-widest text-neutral-300 block mb-6">
@@ -132,7 +132,7 @@ export default function Experiences() {
               </div>
             </div>
 
-            {/* Right — content */}
+            {/* Right - content */}
             <div className="md:col-span-9 p-8 md:p-12">
               <div className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-4 text-neutral-400">
                 {exp.company} · {exp.location}
@@ -144,7 +144,7 @@ export default function Experiences() {
                 {exp.tasks.map((task, j) => (
                   <li key={j} className="flex items-start gap-4">
                     <span className="text-neutral-300 font-black text-sm mt-0.5 shrink-0">
-                      —
+                      -
                     </span>
                     <p className="text-[#5f5e5e] leading-relaxed">{task}</p>
                   </li>

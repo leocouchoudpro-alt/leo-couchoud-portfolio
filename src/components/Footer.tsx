@@ -8,7 +8,7 @@ export default function Footer() {
           LÉO COUCHOUD
         </div>
         <div className="text-[10px] tracking-[0.4em] font-black uppercase text-neutral-400">
-          © 2026 LÉO COUCHOUD — TOUS DROITS RÉSERVÉS
+          © 2026 LÉO COUCHOUD - TOUS DROITS RÉSERVÉS
         </div>
       </div>
 

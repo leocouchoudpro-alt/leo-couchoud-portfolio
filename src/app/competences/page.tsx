@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Compétences — Léo Couchoud",
+  title: "Compétences - Léo Couchoud",
   description:
     "Compétences et outils de Léo Couchoud : SEO, IA, stratégie digitale, gestion de projet et langues.",
 };
@@ -13,8 +13,8 @@ const categories = [
     skills: [
       "Audit SEO complet (technique, on-page, concurrentiel)",
       "SEO/SEA : Semrush, Screaming Frog, Google Search Console",
-      "Google Analytics — analyse de données & recommandations",
-      "WordPress — mise à jour et optimisation",
+      "Google Analytics - analyse de données & recommandations",
+      "WordPress - mise à jour et optimisation",
       "Stratégie de contenu et rédaction web optimisée",
       "Social media management (Instagram, stratégie d'engagement)",
       "Automatisation des process marketing via l'IA",
@@ -87,7 +87,7 @@ export default function Competences() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          06 — COMPÉTENCES
+          06 - COMPÉTENCES
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           SKILLS &amp;<br />OUTILS
@@ -117,7 +117,7 @@ export default function Competences() {
                 {cat.skills.map((skill, j) => (
                   <li key={j} className="flex items-start gap-4 group">
                     <span className="text-neutral-300 font-black text-sm mt-0.5 shrink-0 group-hover:text-black transition-colors">
-                      —
+                      -
                     </span>
                     <p className="text-[#5f5e5e] leading-relaxed group-hover:text-black transition-colors">
                       {skill}

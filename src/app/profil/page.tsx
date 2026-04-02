@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Profil — Léo Couchoud",
+  title: "Profil - Léo Couchoud",
   description:
     "Parcours et présentation de Léo Couchoud, profil hybride tech × management basé entre Valenciennes et Montréal.",
 };
 
 const stats = [
   { label: "ORIGINE", value: "Basse-Terre, Guadeloupe" },
-  { label: "ÂGE", value: "21 ans — né le 27/12/2004" },
+  { label: "ÂGE", value: "21 ans - né le 27/12/2004" },
   { label: "BASE", value: "Valenciennes / Montréal" },
   { label: "FORMATION", value: "BUT3 Tech. de Commercialisation" },
-  { label: "SPORT", value: "Capitaine — Basket départemental" },
+  { label: "SPORT", value: "Capitaine - Basket départemental" },
   { label: "INVESTISSEUR", value: "PEA · Crypto · Immobilier" },
 ];
 
@@ -22,7 +22,7 @@ export default function Profil() {
       {/* Header */}
       <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          02 — PROFIL
+          02 - PROFIL
         </div>
         <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           À<br />PROPOS
@@ -38,6 +38,7 @@ export default function Profil() {
               src="/leo-couchoud.png"
               alt="Léo Couchoud"
               fill
+              unoptimized
               className="object-contain object-bottom grayscale"
             />
           </div>
@@ -49,7 +50,7 @@ export default function Profil() {
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
             Mon parcours m&rsquo;a conduit du numérique au commerce, en passant
-            par le consulting technologique — toujours avec la même curiosité :
+            par le consulting technologique - toujours avec la même curiosité :
             comprendre comment les organisations fonctionnent et comment les
             améliorer.
           </p>
@@ -69,7 +70,7 @@ export default function Profil() {
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
             Je suis quelqu&rsquo;un qui a besoin d&rsquo;être en mouvement. Pas
-            forcément physiquement — même si le sport y contribue — mais dans
+            forcément physiquement - même si le sport y contribue - mais dans
             la tête : apprendre, construire, m&rsquo;impliquer dans ce qui
             m&rsquo;entoure. Je lis sur la finance et l&rsquo;économie,
             j&rsquo;investis depuis mes 20 ans, et je nourris une curiosité
