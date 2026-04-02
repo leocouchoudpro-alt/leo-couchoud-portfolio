@@ -65,7 +65,7 @@ export default function CV() {
               <span>leocouchoudpro@gmail.com</span>
               <span>+33 7 85 82 00 94</span>
               <span>Valenciennes / Montréal</span>
-              <a href="https://linkedin.com/in/LeoCouchoud" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
+              <a href="https://www.linkedin.com/in/leo-couchoud/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
                 linkedin.com/in/LeoCouchoud
               </a>
             </div>
@@ -82,7 +82,7 @@ export default function CV() {
           <div className="md:col-span-9 p-8 md:p-12 bg-[#f3f3f3]">
             <div className="flex flex-col gap-10">
               {[
-                { period: "Mars–Mai 2026", role: "Stagiaire SEO & IA", company: "TechGuys · Montréal" },
+                { period: "Mars–Mai 2026", role: "Consultant IA, Data & SEO", company: "TechGuys · Montréal" },
                 { period: "Mars–Mai 2025", role: "Stagiaire Marketing Digital & SEO", company: "Panda Communication · Valenciennes" },
                 { period: "Sept. 2024–2025", role: "Responsable Communication Digitale", company: "GreenTC · IUT de Valenciennes" },
                 { period: "Déc. 2023–Jan. 2024", role: "Stagiaire Vente & Merchandising", company: "JOTT · Valenciennes" },
@@ -163,7 +163,7 @@ export default function CV() {
           </div>
           <div className="md:col-span-9 p-8 md:p-12 bg-white flex items-center gap-8">
             <a
-              href="https://linkedin.com/in/LeoCouchoud"
+              href="https://www.linkedin.com/in/leo-couchoud/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-black text-white px-8 py-4 font-black tracking-tighter uppercase transition-all hover:italic hover:scale-105 active:scale-95"

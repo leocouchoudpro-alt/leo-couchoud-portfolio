@@ -14,7 +14,7 @@ export default function Footer() {
 
       <div className="flex gap-12 text-[10px] tracking-[0.4em] font-black uppercase">
         <a
-          href="https://linkedin.com/in/LeoCouchoud"
+          href="https://www.linkedin.com/in/leo-couchoud/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-neutral-500 hover:text-black transition-colors"

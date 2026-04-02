@@ -78,7 +78,7 @@ const langues = [
 const outils = [
   "Semrush", "Screaming Frog", "Google Search Console",
   "Google Analytics", "WordPress", "Claude AI", "ChatGPT",
-  "Google Stitch", "VS Code", "Figma", "Instagram", "Canva",
+  "Google Stitch", "VS Code", "Canva", "Asana", "Slack", "Instagram",
 ];
 
 export default function Competences() {

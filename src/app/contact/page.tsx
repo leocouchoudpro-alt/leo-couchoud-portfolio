@@ -65,7 +65,7 @@ export default function Contact() {
                   LINKEDIN
                 </span>
                 <a
-                  href="https://linkedin.com/in/LeoCouchoud"
+                  href="https://www.linkedin.com/in/leo-couchoud/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-black tracking-tighter text-lg hover:italic transition-all"
