@@ -6,17 +6,19 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-hidden bg-white">
-        {/* Photo */}
-        <div className="absolute bottom-0 right-0 z-20 w-full md:w-1/2 h-full flex items-end justify-end pointer-events-none select-none">
-          <Image
-            src="/leo-couchoud.png"
-            alt="Léo Couchoud"
-            width={800}
-            height={1000}
-            className="w-auto h-full object-contain object-bottom"
-            priority
-            unoptimized
-          />
+        {/* Photo ronde */}
+        <div className="absolute top-1/2 right-12 md:right-24 -translate-y-1/2 z-20 pointer-events-none select-none hidden md:block">
+          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-black">
+            <Image
+              src="/leo-couchoud-home.png"
+              alt="Léo Couchoud"
+              width={320}
+              height={320}
+              className="w-full h-full object-cover object-top"
+              priority
+              unoptimized
+            />
+          </div>
         </div>
 
         {/* Massive background typography */}
