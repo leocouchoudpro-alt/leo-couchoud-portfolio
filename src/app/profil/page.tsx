@@ -11,7 +11,7 @@ const stats = [
   { label: "ORIGINE", value: "Basse-Terre, Guadeloupe" },
   { label: "ÂGE", value: "21 ans - né le 27/12/2004" },
   { label: "BASE", value: "Valenciennes / Montréal" },
-  { label: "FORMATION", value: "BUT3 Tech. de Commercialisation" },
+  { label: "FORMATION", value: "BUT3 TC - Marketing Digital, e-Business & Entrepreneuriat" },
   { label: "SPORT", value: "Capitaine - Basket départemental" },
   { label: "INVESTISSEUR", value: "PEA · Crypto · Immobilier" },
 ];
@@ -46,35 +46,32 @@ export default function Profil() {
         <div className="md:col-span-7 flex flex-col gap-8 pt-4">
           <p className="text-2xl md:text-3xl font-light leading-relaxed tracking-tight text-black">
             Je suis Léo Couchoud, originaire de Basse-Terre en Guadeloupe,
-            aujourd&rsquo;hui basé à Valenciennes avec un pied à Montréal.
+            aujourd&rsquo;hui basé dans le Nord, à Valenciennes.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
-            Mon parcours m&rsquo;a conduit du numérique au commerce, en passant
-            par le consulting technologique - toujours avec la même curiosité :
-            comprendre comment les organisations fonctionnent et comment les
-            améliorer.
+            Formé au numérique, passionné par la stratégie : je crois que la
+            vraie valeur se crée quand on fait parler la technique et le
+            business ensemble.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
-            Après un Bac Pro Systèmes Numériques obtenu avec la mention Très
-            Bien, j&rsquo;ai bifurqué vers le commerce et le marketing digital
-            en intégrant un BUT Techniques de Commercialisation à l&rsquo;IUT
-            de Valenciennes. Un choix qui reflète ma conviction : la vraie
-            valeur se crée à l&rsquo;intersection entre la technique et la
-            stratégie business.
+            Diplômé d&rsquo;un Bac Pro Systèmes Numériques (mention Très Bien),
+            j&rsquo;ai choisi de bifurquer vers le commerce et le marketing
+            digital en intégrant un BUT Techniques de Commercialisation. Pas un
+            virage, plutôt une évolution logique : comprendre la technologie,
+            c&rsquo;est bien. Savoir la mettre au service d&rsquo;une vision,
+            c&rsquo;est mieux.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
-            Aujourd&rsquo;hui en stage chez TechGuys, un cabinet de consulting
-            technologique à Montréal, je réalise des audits SEO pour des
-            clients variés, je rédige des briefs éditoriaux et je fais le lien
-            entre la technique et la décision stratégique.
+            Aujourd&rsquo;hui en stage chez TechGuys, cabinet de consulting
+            technologique à Montréal, je réalise des audits SEO, rédige des
+            briefs éditoriaux et fais le pont entre les enjeux techniques et
+            les décisions stratégiques de nos clients.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
-            Je suis quelqu&rsquo;un qui a besoin d&rsquo;être en mouvement. Pas
-            forcément physiquement - même si le sport y contribue - mais dans
-            la tête : apprendre, construire, m&rsquo;impliquer dans ce qui
-            m&rsquo;entoure. Je lis sur la finance et l&rsquo;économie,
-            j&rsquo;investis depuis mes 20 ans, et je nourris une curiosité
-            constante pour l&rsquo;IA, la blockchain et le Web3.
+            En dehors du travail, je suis curieux de tout ce qui bouge :
+            finance, économie, IA, blockchain, Web3. J&rsquo;investis depuis
+            mes 20 ans, je lis beaucoup, et j&rsquo;aborde chaque nouveau sujet
+            avec la même énergie que le premier.
           </p>
         </div>
       </section>
