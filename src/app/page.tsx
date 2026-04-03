@@ -149,23 +149,23 @@ export default function Home() {
           {[
             {
               num: "01",
-              title: "SEO/SEA",
+              title: "SEO",
               desc: "Audit complet, stratégie de mots-clés et optimisation technique data-driven.",
             },
             {
               num: "02",
-              title: "IA & AUTO",
-              desc: "Automatisation des process marketing et intégration de l'IA générative.",
-            },
-            {
-              num: "03",
               title: "STRATÉGIE",
               desc: "Modélisation économique, business model et analyse de marché.",
             },
             {
-              num: "04",
+              num: "03",
               title: "COMMERCE",
               desc: "Négociation, relation client et marketing mix opérationnel.",
+            },
+            {
+              num: "04",
+              title: "IA & AUTOMATISATION",
+              desc: "Automatisation des process marketing et intégration de l'IA générative.",
             },
           ].map(({ num, title, desc }) => (
             <div
