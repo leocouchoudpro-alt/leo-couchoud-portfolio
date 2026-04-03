@@ -13,6 +13,7 @@ const categories = [
     skills: [
       "Audit SEO complet (technique, on-page, concurrentiel)",
       "SEO/SEA : Semrush, Screaming Frog, Google Search Console",
+      "Gestion d'implémentation SEO",
       "Google Analytics - analyse de données & recommandations",
       "WordPress - mise à jour et optimisation",
       "Stratégie de contenu et rédaction web optimisée",
@@ -60,17 +61,21 @@ const categories = [
     skills: [
       "Communication client (présentation d'audits, conseil)",
       "Leadership (capitaine basket, coordination d'équipe asso)",
-      "Adaptabilité (Guadeloupe → Valenciennes → Montréal)",
+      "Adaptabilité",
       "Curiosité intellectuelle (IA, blockchain, Web3, finance)",
+      "Curieux",
       "Autonomie et rigueur",
       "Esprit d'initiative (engagement associatif, investissement)",
+      "Anticipation & gestion du risque (prévoir des plans B avant d'agir)",
+      "Organisation & méthode (workflow structuré avant chaque projet)",
+      "Résilience et positivité",
     ],
   },
 ];
 
 const langues = [
   { langue: "Français", niveau: "Langue maternelle", pct: 100 },
-  { langue: "Anglais", niveau: "Courant (B2/C1)", pct: 80 },
+  { langue: "Anglais", niveau: "Courant (B2/C1)", pct: 72 },
   { langue: "Créole", niveau: "Bon", pct: 65 },
   { langue: "Espagnol", niveau: "Notions", pct: 25 },
 ];
@@ -78,7 +83,7 @@ const langues = [
 const outils = [
   "Semrush", "Screaming Frog", "Google Search Console",
   "Google Analytics", "WordPress", "Claude AI", "ChatGPT",
-  "Google Stitch", "VS Code", "Canva", "Asana", "Slack", "Instagram",
+  "Google Stitch", "Canva", "Asana", "Slack", "Instagram",
 ];
 
 export default function Competences() {

@@ -55,7 +55,7 @@ const experiences = [
       "Augmentation de l'engagement et de la portée par la création de contenu ciblé",
       "Coordination d'une équipe de contributeurs pour la gestion de la présence digitale",
       "Organisation de collectes de vêtements, friperie solidaire, campagnes écoresponsables",
-      "Campagne de prospection pour les Restos du Cœur (appels entreprises, obtention de dons)",
+      "Campagne de prospection pour les Restos du Cœur.",
     ],
     tags: ["Social Media", "Instagram", "Stratégie de contenu", "Coordination"],
     current: false,
@@ -137,7 +137,7 @@ export default function Experiences() {
               <div className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-4 text-neutral-400">
                 {exp.company} · {exp.location}
               </div>
-              <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase mb-8 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase leading-tight mb-8">
                 {exp.role}
               </h2>
               <ul className="flex flex-col gap-4">

@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   description: "Projets et réalisations de Léo Couchoud : audits SEO, projets entrepreneuriaux, communication digitale.",
 };
 
+// docStatus: "en_cours" = rapport pas encore disponible (bouton chantier)
+// docPath: chemin vers le PDF dans /public/docs/ quand disponible
+const rotations = ["-3deg", "2deg", "-2deg", "3deg", "-1deg", "2deg"];
+
 const projects = [
   {
     num: "01",
@@ -12,9 +16,11 @@ const projects = [
     company: "TechGuys",
     location: "Montréal, Canada",
     period: "Mars - Mai 2026",
-    tags: ["SEO Technique", "On-page", "Semrush", "Screaming Frog", "GSC"],
+    tags: ["SEO Technique", "On-page", "Semrush", "Screaming Frog", "GSC", "VSCode"],
     desc: "Réalisation d'audits SEO complets (technique, on-page, concurrentiel), recherche de mots-clés et optimisation du référencement naturel. Rédaction web, briefs éditoriaux, suivi de positionnement et collaboration directe avec la direction.",
-    results: null, // TODO: contenu à fournir
+    docPath: null,
+    docStatus: "en_cours" as const,
+    logo: "techguys.png",
   },
   {
     num: "02",
@@ -24,7 +30,9 @@ const projects = [
     period: "Mars - Mai 2025",
     tags: ["SEO/SEA", "Automatisation IA", "Google Analytics", "WordPress"],
     desc: "Automatisation des process marketing grâce à l'IA. Rédaction et optimisation SEO de contenus web. Pilotage de campagnes SEO/SEA, développement de stratégies de mots-clés et analyse des performances.",
-    results: null, // TODO: contenu à fournir
+    docPath: "/Traces%20portfolio%20et%20projet/Panda%20Communication.pdf",
+    docStatus: null,
+    logo: "panda communication.png",
   },
   {
     num: "03",
@@ -32,39 +40,47 @@ const projects = [
     company: "Projet Entrepreneurial",
     location: "IUT de Valenciennes",
     period: "2024 - 2025",
-    tags: ["Business Model", "Pitch", "Analyse de marché", "Domotique"],
+    tags: ["Business Model", "Pitch", "Analyse de marché", "Domotique", "Gestion de projet", "Leadership", "Travail d'équipe"],
     desc: "Concept de start-up anti-inondations développé dans le cadre du BUT. Système de prévention basé sur la domotique. Co-conception du modèle économique, analyse de marché et pitch investisseurs.",
-    results: "Modèle économique complet, étude de marché, présentation investisseurs.",
+    docPath: "/Traces%20portfolio%20et%20projet/water%20breaker.pdf",
+    docStatus: null,
+    logo: "water breaker.png",
   },
   {
     num: "04",
-    title: "MateBoost",
+    title: "Store Création",
     company: "Projet Entrepreneurial",
     location: "IUT de Valenciennes",
     period: "2024 - 2025",
-    tags: ["Branding", "Go-to-market", "Marketing mix", "Communication digitale"],
-    desc: "Création d'une marque de maté commerce équitable. Création de l'identité de marque, plan de communication digitale et stratégie go-to-market.",
-    results: "Identité de marque complète, plan de communication, stratégie de lancement.",
+    tags: ["E-commerce", "Stratégie digitale", "Marketing mix", "Communication digitale"],
+    desc: "Création d'une boutique digitale de A à Z. Conception de l'offre, mise en place de la stratégie commerciale et digitale, identité de marque et plan de communication.",
+    docPath: "/Traces%20portfolio%20et%20projet/Store_Creation_Complet.pdf",
+    docStatus: null,
+    logo: "store creation.png",
   },
   {
     num: "05",
+    title: "Communication Digitale GreenTC",
+    company: "Association Étudiante GreenTC",
+    location: "IUT de Valenciennes",
+    period: "Sept. 2024 - Sept. 2025",
+    tags: ["Social Media", "Stratégie de contenu", "Instagram", "Coordination", "Design graphique", "Canva"],
+    desc: "Responsable Communication Digitale. Planification et exécution de campagnes Instagram, coordination d'une équipe de contributeurs, organisation d'événements associatifs.",
+    docPath: "/Traces%20portfolio%20et%20projet/greentc.pdf",
+    docStatus: null,
+    logo: "greentc.png",
+  },
+  {
+    num: "06",
     title: "Business Game UPHF",
     company: "Université Polytechnique Hauts-de-France",
     location: "Valenciennes",
     period: "2024",
     tags: ["Finance", "Stratégie", "Leadership", "Décision sous pression"],
     desc: "Simulation compétitive inter-équipes. Leadership décisionnel, gestion finance/marketing/opérations, analyse stratégique en temps réel.",
-    results: "2ème place sur l'ensemble des équipes participantes.",
-  },
-  {
-    num: "06",
-    title: "Communication Digitale GreenTC",
-    company: "Association Étudiante GreenTC",
-    location: "IUT de Valenciennes",
-    period: "Sept. 2024 - Sept. 2025",
-    tags: ["Social Media", "Stratégie de contenu", "Instagram", "Coordination"],
-    desc: "Responsable Communication Digitale. Planification et exécution de campagnes Instagram, coordination d'une équipe de contributeurs, organisation d'événements associatifs.",
-    results: "Augmentation de l'engagement et de la portée sur Instagram.",
+    docPath: "/Traces%20portfolio%20et%20projet/Business_Game_BelleRive.pdf",
+    docStatus: null,
+    logo: "businessgame.png",
   },
 ];
 
@@ -92,10 +108,24 @@ export default function Portfolio() {
             }`}
           >
             {/* Number column */}
-            <div className="md:col-span-1 p-8 md:p-12 border-r border-[#c6c6c6] flex items-start">
+            <div className="md:col-span-1 py-8 md:py-12 px-4 md:px-5 border-r border-[#c6c6c6] flex flex-col items-start gap-6">
               <span className="text-xs font-black uppercase tracking-widest text-neutral-300">
                 {project.num}
               </span>
+              {project.logo && (
+                <div
+                  className="w-16 h-16 bg-white border border-[#e8e8e8] shadow-md flex items-center justify-center p-2"
+                  style={{ transform: `rotate(${rotations[i % rotations.length]})` }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`/logos/${project.logo}`}
+                    alt={project.company}
+                    className="w-full h-full object-contain"
+                    style={{ filter: "saturate(80%)" }}
+                  />
+                </div>
+              )}
             </div>
 
             {/* Content */}
@@ -107,21 +137,26 @@ export default function Portfolio() {
                 {project.title}
               </h2>
               <p className="text-[#5f5e5e] leading-relaxed mb-6">{project.desc}</p>
-              {project.results ? (
-                <div className="bg-black text-white p-4 inline-block">
-                  <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase block mb-1 opacity-60">
-                    RÉSULTAT
+              {project.docStatus === "en_cours" ? (
+                <div className="border-2 border-dashed border-[#c6c6c6] p-4 inline-flex items-center gap-3">
+                  <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400">
+                    RAPPORT DE STAGE
                   </span>
-                  <p className="font-bold text-sm">{project.results}</p>
-                </div>
-              ) : (
-                <div className="border-2 border-dashed border-[#c6c6c6] p-4 inline-block">
-                  <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-300">
-                    {/* TODO: contenu à fournir - métriques */}
-                    RÉSULTATS À COMPLÉTER
+                  <span className="bg-[#f3f3f3] border border-[#c6c6c6] text-[#5f5e5e] px-3 py-1 font-black text-[0.6rem] tracking-[0.25em] uppercase">
+                    EN COURS
                   </span>
                 </div>
-              )}
+              ) : project.docPath ? (
+                <a
+                  href={project.docPath}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-6 py-4 inline-flex items-center gap-4 font-black tracking-tighter uppercase transition-all hover:italic hover:scale-105 active:scale-95"
+                >
+                  <span className="text-[0.6875rem] tracking-[0.3em] opacity-60">PDF</span>
+                  Voir le dossier →
+                </a>
+              ) : null}
             </div>
 
             {/* Tags */}

@@ -49,7 +49,7 @@ export default function Profil() {
             aujourd&rsquo;hui basé dans le Nord, à Valenciennes.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
-            Formé au numérique, passionné par la stratégie : je crois que la
+            Formé au numérique, attaché à la stratégie : je crois que la
             vraie valeur se crée quand on fait parler la technique et le
             business ensemble.
           </p>
@@ -70,8 +70,10 @@ export default function Profil() {
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
             En dehors du travail, je suis curieux de tout ce qui bouge :
             finance, économie, IA, blockchain, Web3. J&rsquo;investis depuis
-            mes 20 ans, je lis beaucoup, et j&rsquo;aborde chaque nouveau sujet
-            avec la même énergie que le premier.
+            mes 20 ans, je lis beaucoup - sur ces sujets, mais aussi des livres
+            de développement personnel. La musique tient également une place
+            importante dans mon quotidien, et j&rsquo;aborde chaque nouveau
+            sujet avec la même énergie que le premier.
           </p>
         </div>
       </section>

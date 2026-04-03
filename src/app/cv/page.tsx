@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "CV - Léo Couchoud",
@@ -15,10 +16,25 @@ export default function CV() {
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           07 - CV
         </div>
-        <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
-          CURRI<br />CULUM
-        </h1>
-        <div className="w-24 h-1 bg-black" />
+        <div className="flex items-end justify-between gap-8">
+          <div>
+            <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
+              CURRI<br />CULUM
+            </h1>
+            <div className="w-24 h-1 bg-black" />
+          </div>
+          <div className="hidden md:block shrink-0 w-60 lg:w-80 -mb-24 -mr-6 md:-mr-12 overflow-hidden self-end">
+            <Image
+              src="/leo-couchoud-home.png"
+              alt="Léo Couchoud"
+              width={320}
+              height={400}
+              className="w-full h-full object-cover object-[center_20%]"
+              style={{ filter: "grayscale(100%) contrast(1.05)" }}
+              unoptimized
+            />
+          </div>
+        </div>
       </section>
 
       {/* Download CTA */}
@@ -32,9 +48,8 @@ export default function CV() {
               CV_Leo_Couchoud.pdf
             </p>
           </div>
-          {/* TODO: contenu à fournir - remplacer par le vrai fichier PDF */}
           <a
-            href="/CV_Leo_Couchoud.pdf"
+            href="/Traces%20portfolio%20et%20projet/CV%20leo%20couchoud.pdf"
             className="bg-white text-black px-12 py-6 font-black tracking-tighter uppercase text-xl transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap flex items-center gap-4"
             download
           >

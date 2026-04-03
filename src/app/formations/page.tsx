@@ -44,7 +44,7 @@ export default function Formations() {
               BUT Techniques de Commercialisation
             </h2>
             <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e] mb-12">
-              Parcours MDEBE - Marketing Digital, e-Business & Entrepreneuriat
+              Parcours MDEE - Marketing Digital, e-Business & Entrepreneuriat
             </p>
 
             {/* Années */}
@@ -100,9 +100,9 @@ export default function Formations() {
                   PROJETS NOTABLES
                 </span>
                 <ul className="flex flex-col gap-2 text-[#5f5e5e]">
-                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>WaterBreaker (anti-inondations, domotique)</li>
-                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>MateBoost (marque maté commerce équitable)</li>
-                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>Business Game UPHF 2024 - 2ème place</li>
+                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>NewCom - Simulation de vente BtoB : négociation en conditions réelles, catalogue sur-mesure, carte de visite et support Excel</li>
+                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>Restos du Coeur - Prospection téléphonique BtoB pour obtenir des dons d&apos;entreprises</li>
+                  <li className="flex gap-3"><span className="text-neutral-300 font-black">-</span>Body Park - Étude stratégique de communication et recherche de sponsor</li>
                 </ul>
               </div>
               <div>
@@ -110,7 +110,7 @@ export default function Formations() {
                   COMPÉTENCES ACQUISES
                 </span>
                 <div className="flex flex-wrap gap-2">
-                  {["Marketing mix", "Négociation", "Stratégie digitale", "E-business", "Entrepreneuriat", "Analyse financière", "Gestion de projet"].map((c) => (
+                  {["Marketing mix", "Négociation", "Stratégie digitale", "E-business", "Entrepreneuriat", "Gestion de projet"].map((c) => (
                     <span key={c} className="bg-[#e8e8e8] px-2 py-1 font-black text-[0.625rem] tracking-wider uppercase">
                       {c}
                     </span>
