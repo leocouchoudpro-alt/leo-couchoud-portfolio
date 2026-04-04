@@ -140,7 +140,7 @@ export default function Home() {
       {/* Skills Section */}
       <section className="py-24 md:py-48 px-6 md:px-12 bg-[#f9f9f9]">
         <div className="mb-12 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-          <h2 className="text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none">
+          <h2 className="text-4xl sm:text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none">
             /SKILLS
           </h2>
           <div className="text-[0.6875rem] font-black tracking-[0.5em] uppercase text-neutral-400">
@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-24 md:py-48 px-6 md:px-12 text-center bg-black text-white">
-        <h2 className="text-5xl md:text-[10rem] font-black tracking-tighter uppercase mb-20 leading-[0.85]">
+        <h2 className="text-3xl sm:text-5xl md:text-[10rem] font-black tracking-tighter uppercase mb-12 md:mb-20 leading-[0.85]">
           PRÊT À<br />COLLABORER ?
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">

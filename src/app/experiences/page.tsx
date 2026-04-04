@@ -87,7 +87,7 @@ export default function Experiences() {
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           04 - EXPÉRIENCES
         </div>
-        <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
+        <h1 className="text-4xl sm:text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
           PARCOURS<br />PRO
         </h1>
         <div className="w-24 h-1 bg-black" />
