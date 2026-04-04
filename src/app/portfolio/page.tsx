@@ -32,7 +32,7 @@ const projects = [
     desc: "Automatisation des process marketing grâce à l'IA. Rédaction et optimisation SEO de contenus web. Pilotage de campagnes SEO/SEA, développement de stratégies de mots-clés et analyse des performances.",
     docPath: "/docs/Panda%20Communication.pdf",
     docStatus: null,
-    logo: "panda communication.png",
+    logo: "panda-communication.png",
   },
   {
     num: "03",
@@ -44,7 +44,7 @@ const projects = [
     desc: "Concept de start-up anti-inondations développé dans le cadre du BUT. Système de prévention basé sur la domotique. Co-conception du modèle économique, analyse de marché et pitch investisseurs.",
     docPath: "/docs/water%20breaker.pdf",
     docStatus: null,
-    logo: "water breaker.png",
+    logo: "water-breaker.png",
   },
   {
     num: "04",
@@ -56,7 +56,7 @@ const projects = [
     desc: "Création d'une boutique digitale de A à Z. Conception de l'offre, mise en place de la stratégie commerciale et digitale, identité de marque et plan de communication.",
     docPath: "/docs/Store_Creation_Complet.pdf",
     docStatus: null,
-    logo: "store creation.png",
+    logo: "store-creation.png",
   },
   {
     num: "05",
