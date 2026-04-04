@@ -49,7 +49,7 @@ export default function CV() {
             </p>
           </div>
           <a
-            href="/docs/CV%20leo%20couchoud.pdf"
+            href="/docs/CV_Leo_Couchoud.pdf"
             className="bg-white text-black px-12 py-6 font-black tracking-tighter uppercase text-xl transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap flex items-center gap-4"
             download
           >
