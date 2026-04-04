@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <>
       {/* Header */}
-      <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           08 - CONTACT
         </div>

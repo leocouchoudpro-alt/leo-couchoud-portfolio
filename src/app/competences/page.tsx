@@ -90,7 +90,7 @@ export default function Competences() {
   return (
     <>
       {/* Header */}
-      <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           06 - COMPÉTENCES
         </div>
@@ -136,7 +136,7 @@ export default function Competences() {
       </section>
 
       {/* Langues */}
-      <section className="py-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.6875rem] font-black tracking-[0.5em] uppercase mb-16 text-neutral-400">
           LANGUES
         </div>
@@ -158,7 +158,7 @@ export default function Competences() {
       </section>
 
       {/* Outils */}
-      <section className="py-24 px-6 md:px-12 bg-[#f3f3f3] border-b border-[#c6c6c6]">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-[#f3f3f3] border-b border-[#c6c6c6]">
         <div className="text-[0.6875rem] font-black tracking-[0.5em] uppercase mb-16 text-neutral-400">
           OUTILS MAÎTRISÉS
         </div>
@@ -175,7 +175,7 @@ export default function Competences() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
         <p className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
           Télécharger<br />mon CV
         </p>

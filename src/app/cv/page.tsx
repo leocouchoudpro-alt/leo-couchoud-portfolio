@@ -12,7 +12,7 @@ export default function CV() {
   return (
     <>
       {/* Header */}
-      <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           07 - CV
         </div>
@@ -38,7 +38,7 @@ export default function CV() {
       </section>
 
       {/* Download CTA */}
-      <section className="py-24 px-6 md:px-12 bg-black text-white border-b border-[#c6c6c6]">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white border-b border-[#c6c6c6]">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <p className="text-[0.6875rem] font-black tracking-[0.4em] uppercase opacity-50 mb-4">

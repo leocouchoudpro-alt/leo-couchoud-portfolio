@@ -88,7 +88,7 @@ export default function Portfolio() {
   return (
     <>
       {/* Header */}
-      <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           03 - PORTFOLIO
         </div>
@@ -108,13 +108,13 @@ export default function Portfolio() {
             }`}
           >
             {/* Number column */}
-            <div className="md:col-span-1 py-8 md:py-12 px-4 md:px-5 border-r border-[#c6c6c6] flex flex-col items-start gap-6">
+            <div className="md:col-span-1 py-4 md:py-12 px-4 md:px-5 border-b md:border-b-0 md:border-r border-[#c6c6c6] flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-6">
               <span className="text-xs font-black uppercase tracking-widest text-neutral-300">
                 {project.num}
               </span>
               {project.logo && (
                 <div
-                  className="w-16 h-16 bg-white border border-[#e8e8e8] shadow-md flex items-center justify-center p-2"
+                  className="w-10 h-10 md:w-16 md:h-16 bg-white border border-[#e8e8e8] shadow-md flex items-center justify-center p-1.5 md:p-2 shrink-0"
                   style={{ transform: `rotate(${rotations[i % rotations.length]})` }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -178,7 +178,7 @@ export default function Portfolio() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
         <p className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
           Parlons de<br />votre projet
         </p>

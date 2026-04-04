@@ -20,7 +20,7 @@ export default function Profil() {
   return (
     <>
       {/* Header */}
-      <section className="pt-48 pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           02 - PROFIL
         </div>
@@ -31,7 +31,7 @@ export default function Profil() {
       </section>
 
       {/* Main bio */}
-      <section className="py-24 px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start bg-[#f9f9f9] border-b border-[#c6c6c6]">
+      <section className="py-16 md:py-24 px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start bg-[#f9f9f9] border-b border-[#c6c6c6]">
         <div className="md:col-span-5">
           <div className="w-full aspect-[3/4] bg-[#f3f3f3] overflow-hidden relative">
             <Image
@@ -79,7 +79,7 @@ export default function Profil() {
       </section>
 
       {/* Stats / données clés */}
-      <section className="py-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
         <div className="text-[0.6875rem] font-black tracking-[0.5em] uppercase mb-16 text-neutral-400">
           DONNÉES CLÉS
         </div>
@@ -99,7 +99,7 @@ export default function Profil() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
         <p className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
           Voir mes<br />réalisations
         </p>

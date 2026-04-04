@@ -72,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* About Snippet */}
-      <section className="bg-[#f3f3f3] py-48 px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start border-t border-[#c6c6c6]">
+      <section className="bg-[#f3f3f3] py-24 md:py-48 px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start border-t border-[#c6c6c6]">
         <div className="md:col-span-4">
           <h2 className="text-4xl font-black tracking-tighter uppercase mb-4">
             /PROFIL
@@ -138,8 +138,8 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-48 px-6 md:px-12 bg-[#f9f9f9]">
-        <div className="mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+      <section className="py-24 md:py-48 px-6 md:px-12 bg-[#f9f9f9]">
+        <div className="mb-12 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
           <h2 className="text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none">
             /SKILLS
           </h2>
@@ -172,7 +172,7 @@ export default function Home() {
           ].map(({ num, title, desc }) => (
             <div
               key={num}
-              className="p-12 border-r border-b border-[#c6c6c6] bg-white hover:bg-black hover:text-white transition-all duration-300 cursor-default group"
+              className="p-6 md:p-12 border-r border-b border-[#c6c6c6] bg-white hover:bg-black hover:text-white transition-all duration-300 cursor-default group"
             >
               <span className="text-xs font-bold uppercase tracking-widest mb-12 block group-hover:translate-x-2 transition-transform">
                 {num}
@@ -187,20 +187,20 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-48 px-6 md:px-12 text-center bg-black text-white">
+      <section className="py-24 md:py-48 px-6 md:px-12 text-center bg-black text-white">
         <h2 className="text-5xl md:text-[10rem] font-black tracking-tighter uppercase mb-20 leading-[0.85]">
           PRÊT À<br />COLLABORER ?
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
           <Link
             href="/contact"
-            className="bg-white text-black px-16 py-6 font-black text-2xl tracking-tighter uppercase transition-all hover:italic hover:scale-105 active:scale-95 w-full md:w-auto"
+            className="bg-white text-black px-10 md:px-16 py-5 md:py-6 font-black text-lg md:text-2xl tracking-tighter uppercase transition-all hover:italic hover:scale-105 active:scale-95 w-full md:w-auto"
           >
             Me contacter
           </Link>
           <Link
             href="/portfolio"
-            className="bg-transparent text-white border-4 border-white px-16 py-6 font-black text-2xl tracking-tighter uppercase transition-all hover:bg-white hover:text-black active:scale-95 w-full md:w-auto"
+            className="bg-transparent text-white border-4 border-white px-10 md:px-16 py-5 md:py-6 font-black text-lg md:text-2xl tracking-tighter uppercase transition-all hover:bg-white hover:text-black active:scale-95 w-full md:w-auto"
           >
             Voir les projets
           </Link>
