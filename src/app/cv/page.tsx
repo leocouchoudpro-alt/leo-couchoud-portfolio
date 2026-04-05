@@ -131,7 +131,7 @@ export default function CV() {
                 </span>
                 <div>
                   <p className="font-black tracking-tighter uppercase">BUT Techniques de Commercialisation</p>
-                  <p className="text-[#5f5e5e] text-sm">IUT Valenciennes - Parcours MDEBE · En cours</p>
+                  <p className="text-[#5f5e5e] text-sm">IUT Valenciennes - Parcours MDEE · En cours</p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8">
