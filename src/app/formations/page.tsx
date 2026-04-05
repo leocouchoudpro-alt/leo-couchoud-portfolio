@@ -14,7 +14,7 @@ export default function Formations() {
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           05 - FORMATIONS
         </div>
-        <h1 className="text-4xl sm:text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
           PARCOURS<br />ACADÉMIQUE
         </h1>
         <div className="w-24 h-1 bg-black" />
@@ -54,42 +54,27 @@ export default function Formations() {
                 <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
                   BUT3 · 2025–2026
                 </span>
-                <p className="font-black text-sm uppercase tracking-tight mb-4">
+                <p className="font-black text-sm uppercase tracking-tight">
                   Semestre 5 validé · Inscrit S6
                 </p>
-                <div className="flex flex-col gap-1.5 text-xs text-[#5f5e5e]">
-                  <span>Marketing - <strong>12.80</strong></span>
-                  <span>Vente - <strong>13.21</strong></span>
-                  <span>Marketing Digital - <strong>13.56</strong></span>
-                  <span>E-business & Entrepreneuriat - <strong>13.68</strong></span>
-                </div>
               </div>
               {/* BUT2 */}
               <div className="p-8 border-r border-b border-[#c6c6c6]">
                 <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
                   BUT2 · 2024–2025
                 </span>
-                <p className="font-black text-sm uppercase tracking-tight mb-4">
+                <p className="font-black text-sm uppercase tracking-tight">
                   Validé (ADM) · 120 ECTS
                 </p>
-                <div className="flex flex-col gap-1.5 text-xs text-[#5f5e5e]">
-                  <span>DUT (BUT1+BUT2) validé</span>
-                  <span>S3 - ~12/20</span>
-                  <span>S4 - ~12/20</span>
-                </div>
               </div>
               {/* BUT1 */}
               <div className="p-8 border-r border-b border-[#c6c6c6]">
                 <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
                   BUT1 · 2023–2024
                 </span>
-                <p className="font-black text-sm uppercase tracking-tight mb-4">
+                <p className="font-black text-sm uppercase tracking-tight">
                   Validé (ADM)
                 </p>
-                <div className="flex flex-col gap-1.5 text-xs text-[#5f5e5e]">
-                  <span>S1 - ~12/20</span>
-                  <span>S2 - ~11.5/20</span>
-                </div>
               </div>
             </div>
 
@@ -149,36 +134,21 @@ export default function Formations() {
             <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase mb-4 leading-tight">
               Bac Pro Systèmes Numériques
             </h2>
-            <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e] mb-12">
+            <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e]">
               Option B - Audiovisuels, Réseau & Équipements Domestiques
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-t border-l border-[#c6c6c6]">
-              {[
-                { label: "Mathématiques", note: "18.5/20" },
-                { label: "Anglais", note: "18/20" },
-                { label: "Chef d'Œuvre", note: "17/20" },
-                { label: "PIM", note: "17.5/20" },
-              ].map(({ label, note }) => (
-                <div key={label} className="p-6 border-r border-b border-[#c6c6c6]">
-                  <span className="text-[0.6875rem] font-black tracking-[0.2em] uppercase text-neutral-400 block mb-2">
-                    {label}
-                  </span>
-                  <p className="font-black text-2xl tracking-tighter">{note}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
-        <p className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
+        <p className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
           Voir mes<br />compétences
         </p>
         <a
           href="/competences"
-          className="bg-white text-black px-12 py-5 font-black tracking-tighter uppercase text-lg transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap"
+          className="bg-white text-black px-8 sm:px-12 py-4 sm:py-5 font-black tracking-tighter uppercase text-base sm:text-lg transition-all hover:italic hover:scale-105 active:scale-95"
         >
           Compétences →
         </a>

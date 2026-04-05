@@ -94,7 +94,7 @@ export default function Competences() {
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           06 - COMPÉTENCES
         </div>
-        <h1 className="text-4xl sm:text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
           SKILLS &amp;<br />OUTILS
         </h1>
         <div className="w-24 h-1 bg-black" />
@@ -176,12 +176,12 @@ export default function Competences() {
 
       {/* CTA */}
       <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
-        <p className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
+        <p className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
           Télécharger<br />mon CV
         </p>
         <a
           href="/cv"
-          className="bg-white text-black px-12 py-5 font-black tracking-tighter uppercase text-lg transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap"
+          className="bg-white text-black px-8 sm:px-12 py-4 sm:py-5 font-black tracking-tighter uppercase text-base sm:text-lg transition-all hover:italic hover:scale-105 active:scale-95"
         >
           Voir le CV →
         </a>

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 const stats = [
   { label: "ORIGINE", value: "Basse-Terre, Guadeloupe" },
-  { label: "ÂGE", value: "21 ans - né le 27/12/2004" },
+  { label: "ÂGE", value: "21 ans" },
   { label: "BASE", value: "Valenciennes / Montréal" },
   { label: "FORMATION", value: "BUT3 TC - Marketing Digital, e-Business & Entrepreneuriat" },
   { label: "SPORT", value: "Capitaine - Basket départemental" },
-  { label: "INVESTISSEUR", value: "PEA · Crypto · Immobilier" },
+  { label: "INVESTISSEUR", value: "Bourse · Immobilier" },
 ];
 
 export default function Profil() {
@@ -24,7 +24,7 @@ export default function Profil() {
         <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           02 - PROFIL
         </div>
-        <h1 className="text-4xl sm:text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
           À<br />PROPOS
         </h1>
         <div className="w-24 h-1 bg-black" />
@@ -100,12 +100,12 @@ export default function Profil() {
 
       {/* CTA */}
       <section className="py-16 md:py-24 px-6 md:px-12 bg-black text-white flex flex-col md:flex-row items-center justify-between gap-8">
-        <p className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
+        <p className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tighter uppercase leading-tight">
           Voir mes<br />réalisations
         </p>
         <a
           href="/portfolio"
-          className="bg-white text-black px-12 py-5 font-black tracking-tighter uppercase text-lg transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap"
+          className="bg-white text-black px-8 sm:px-12 py-4 sm:py-5 font-black tracking-tighter uppercase text-base sm:text-lg transition-all hover:italic hover:scale-105 active:scale-95"
         >
           Mon portfolio →
         </a>

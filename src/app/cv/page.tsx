@@ -18,8 +18,8 @@ export default function CV() {
         </div>
         <div className="flex items-end justify-between gap-8">
           <div>
-            <h1 className="text-4xl sm:text-7xl md:text-[10rem] font-black tracking-tighter uppercase leading-[0.85] mb-12">
-              CURRI<br />CULUM
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
+              CURRICULUM
             </h1>
             <div className="w-24 h-1 bg-black" />
           </div>
@@ -44,13 +44,13 @@ export default function CV() {
             <p className="text-[0.6875rem] font-black tracking-[0.4em] uppercase opacity-50 mb-4">
               DOCUMENT PDF
             </p>
-            <p className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-tight">
+            <p className="text-lg sm:text-2xl md:text-4xl font-black tracking-tighter uppercase leading-tight break-all sm:break-normal">
               CV_Leo_Couchoud.pdf
             </p>
           </div>
           <a
             href="/docs/CV_Leo_Couchoud.pdf"
-            className="bg-white text-black px-12 py-6 font-black tracking-tighter uppercase text-xl transition-all hover:italic hover:scale-105 active:scale-95 whitespace-nowrap flex items-center gap-4"
+            className="bg-white text-black px-8 sm:px-12 py-4 sm:py-6 font-black tracking-tighter uppercase text-base sm:text-xl transition-all hover:italic hover:scale-105 active:scale-95 flex items-center gap-4"
             download
           >
             <span>↓</span>
@@ -70,7 +70,7 @@ export default function CV() {
             </span>
           </div>
           <div className="md:col-span-9 p-8 md:p-12 bg-white">
-            <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase mb-2">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase mb-2">
               LÉO COUCHOUD
             </h2>
             <p className="text-xl font-black tracking-tighter uppercase text-[#5f5e5e] mb-8">

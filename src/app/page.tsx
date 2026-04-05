@@ -49,13 +49,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/profil"
-              className="bg-black text-[#e2e2e2] px-10 py-5 font-black tracking-tighter uppercase transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] active:scale-95 text-center"
+              className="bg-black text-[#e2e2e2] px-6 sm:px-10 py-4 sm:py-5 font-black tracking-tighter uppercase transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] active:scale-95 text-center"
             >
               Découvrir mon parcours
             </Link>
             <Link
               href="/contact"
-              className="bg-transparent text-black border-2 border-black px-10 py-5 font-black tracking-tighter uppercase transition-all hover:bg-black hover:text-[#e2e2e2] active:scale-95 text-center"
+              className="bg-transparent text-black border-2 border-black px-6 sm:px-10 py-4 sm:py-5 font-black tracking-tighter uppercase transition-all hover:bg-black hover:text-[#e2e2e2] active:scale-95 text-center"
             >
               Me contacter
             </Link>
@@ -140,7 +140,7 @@ export default function Home() {
       {/* Skills Section */}
       <section className="py-24 md:py-48 px-6 md:px-12 bg-[#f9f9f9]">
         <div className="mb-12 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-          <h2 className="text-4xl sm:text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none">
+          <h2 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-none">
             /SKILLS
           </h2>
           <div className="text-[0.6875rem] font-black tracking-[0.5em] uppercase text-neutral-400">
@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-24 md:py-48 px-6 md:px-12 text-center bg-black text-white">
-        <h2 className="text-3xl sm:text-5xl md:text-[10rem] font-black tracking-tighter uppercase mb-12 md:mb-20 leading-[0.85]">
+        <h2 className="text-3xl sm:text-5xl md:text-8xl font-black tracking-tighter uppercase mb-12 md:mb-20 leading-[0.85]">
           PRÊT À<br />COLLABORER ?
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
