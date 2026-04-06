@@ -45,11 +45,11 @@ export default function CV() {
               DOCUMENT PDF
             </p>
             <p className="text-lg sm:text-2xl md:text-4xl font-black tracking-tighter uppercase leading-tight break-all sm:break-normal">
-              CV_Leo_Couchoud.pdf
+              CV-Couchoud.pdf
             </p>
           </div>
           <a
-            href="/docs/CV_Leo_Couchoud.pdf"
+            href="/docs/CV-Couchoud.pdf"
             className="bg-white text-black px-8 sm:px-12 py-4 sm:py-6 font-black tracking-tighter uppercase text-base sm:text-xl transition-all hover:italic hover:scale-105 active:scale-95 flex items-center gap-4"
             download
           >
