@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "CV - Léo Couchoud",
   description:
-    "Curriculum vitae de Léo Couchoud - Marketing Digital & Stratégie. Téléchargement disponible.",
+    "Curriculum vitae de Léo Couchoud - Marketing Digital & Management. Téléchargement disponible.",
 };
 
 export default function CV() {
@@ -74,7 +74,7 @@ export default function CV() {
               LÉO COUCHOUD
             </h2>
             <p className="text-xl font-black tracking-tighter uppercase text-[#5f5e5e] mb-8">
-              Marketing Digital & Stratégie · Consultant en devenir
+              Marketing Digital & Management
             </p>
             <div className="flex flex-wrap gap-6 text-[0.6875rem] font-black tracking-[0.2em] uppercase text-neutral-400">
               <span>leocouchoudpro@gmail.com</span>
