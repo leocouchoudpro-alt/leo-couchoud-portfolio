@@ -23,7 +23,7 @@ export default function CV() {
             </h1>
             <div className="w-24 h-1 bg-black" />
           </div>
-          <div className="hidden md:block shrink-0 w-60 lg:w-80 -mb-24 -mr-6 md:-mr-12 overflow-hidden self-end">
+          <div className="hidden lg:block shrink-0 w-60 xl:w-80 -mb-24 -mr-12 overflow-hidden self-end">
             <Image
               src="/leo-couchoud-home.png"
               alt="Léo Couchoud"

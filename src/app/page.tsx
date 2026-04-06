@@ -8,8 +8,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-hidden bg-white">
         {/* Photo ronde */}
-        <div className="absolute top-1/2 right-24 md:right-48 -translate-y-1/2 z-20 pointer-events-none select-none hidden md:block">
-          <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-black">
+        <div className="absolute top-1/2 right-8 md:right-16 lg:right-48 -translate-y-1/2 z-20 pointer-events-none select-none hidden md:block">
+          <div className="w-48 h-48 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-black">
             <Image
               src="/leo-couchoud-home.png"
               alt="Léo Couchoud"
@@ -142,7 +142,7 @@ export default function Home() {
             CORE COMPETENCIES
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border-t border-l border-[#c6c6c6]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-[#c6c6c6]">
           {[
             {
               num: "01",

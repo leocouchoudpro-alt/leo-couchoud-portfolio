@@ -22,8 +22,8 @@ export default function Formations() {
 
       {/* BUT TC */}
       <section className="bg-white border-b border-[#c6c6c6]">
-        <div className="grid grid-cols-1 md:grid-cols-12 border-b border-[#c6c6c6]">
-          <div className="md:col-span-3 p-8 md:p-12 border-r border-[#c6c6c6] bg-black text-white flex flex-col justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-12 border-b border-[#c6c6c6]">
+          <div className="lg:col-span-3 p-8 lg:p-12 border-r border-[#c6c6c6] bg-black text-white flex flex-col justify-between">
             <div>
               <span className="text-[0.6875rem] font-black tracking-[0.4em] uppercase opacity-50 block mb-6">
                 FORMATION PRINCIPALE
@@ -36,11 +36,11 @@ export default function Formations() {
               EN COURS
             </span>
           </div>
-          <div className="md:col-span-9 p-8 md:p-12">
+          <div className="lg:col-span-9 p-8 lg:p-12">
             <div className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-4 text-neutral-400">
               IUT DE VALENCIENNES - UNIVERSITÉ POLYTECHNIQUE HAUTS-DE-FRANCE (UPHF)
             </div>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase mb-4 leading-tight">
+            <h2 className="text-3xl lg:text-5xl font-black tracking-tighter uppercase mb-4 leading-tight">
               BUT Techniques de Commercialisation
             </h2>
             <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e] mb-12">
@@ -48,7 +48,7 @@ export default function Formations() {
             </p>
 
             {/* Années */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-l border-[#c6c6c6]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 border-t border-l border-[#c6c6c6]">
               {/* BUT3 */}
               <div className="p-8 border-r border-b border-[#c6c6c6]">
                 <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
@@ -79,7 +79,7 @@ export default function Formations() {
             </div>
 
             {/* Projets et compétences */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-12">
               <div>
                 <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
                   PROJETS NOTABLES
@@ -107,8 +107,8 @@ export default function Formations() {
         </div>
 
         {/* Bac Pro */}
-        <div className="grid grid-cols-1 md:grid-cols-12">
-          <div className="md:col-span-3 p-8 md:p-12 border-r border-[#c6c6c6] bg-[#f3f3f3] flex flex-col justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-12">
+          <div className="lg:col-span-3 p-8 lg:p-12 border-r border-[#c6c6c6] bg-[#f3f3f3] flex flex-col justify-between">
             <div>
               <span className="text-[0.6875rem] font-black tracking-[0.4em] uppercase text-neutral-400 block mb-6">
                 FORMATION INITIALE
@@ -127,11 +127,11 @@ export default function Formations() {
               <p className="font-black text-lg text-[#5f5e5e]">16.25/20</p>
             </div>
           </div>
-          <div className="md:col-span-9 p-8 md:p-12">
+          <div className="lg:col-span-9 p-8 lg:p-12">
             <div className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-4 text-neutral-400">
               GUADELOUPE
             </div>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase mb-4 leading-tight">
+            <h2 className="text-3xl lg:text-5xl font-black tracking-tighter uppercase mb-4 leading-tight">
               Bac Pro Systèmes Numériques
             </h2>
             <p className="font-black tracking-tighter uppercase text-lg text-[#5f5e5e]">

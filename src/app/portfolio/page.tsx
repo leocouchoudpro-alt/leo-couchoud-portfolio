@@ -103,18 +103,18 @@ export default function Portfolio() {
         {projects.map((project, i) => (
           <div
             key={project.num}
-            className={`grid grid-cols-1 md:grid-cols-12 gap-0 border-b border-[#c6c6c6] ${
+            className={`grid grid-cols-1 lg:grid-cols-12 gap-0 border-b border-[#c6c6c6] ${
               i % 2 === 0 ? "bg-white" : "bg-[#f3f3f3]"
             }`}
           >
             {/* Number column */}
-            <div className="md:col-span-1 py-4 md:py-12 px-4 md:px-5 border-b md:border-b-0 md:border-r border-[#c6c6c6] flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-6">
+            <div className="lg:col-span-1 py-4 lg:py-12 px-4 lg:px-5 border-b lg:border-b-0 lg:border-r border-[#c6c6c6] flex flex-row lg:flex-col items-center lg:items-start gap-4 lg:gap-6">
               <span className="text-xs font-black uppercase tracking-widest text-neutral-300">
                 {project.num}
               </span>
               {project.logo && (
                 <div
-                  className="w-10 h-10 md:w-16 md:h-16 bg-white border border-[#e8e8e8] shadow-md flex items-center justify-center p-1.5 md:p-2 shrink-0"
+                  className="w-10 h-10 lg:w-16 lg:h-16 bg-white border border-[#e8e8e8] shadow-md flex items-center justify-center p-1.5 lg:p-2 shrink-0"
                   style={{ transform: `rotate(${rotations[i % rotations.length]})` }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -129,11 +129,11 @@ export default function Portfolio() {
             </div>
 
             {/* Content */}
-            <div className="md:col-span-8 p-8 md:p-12 border-r border-[#c6c6c6]">
+            <div className="lg:col-span-8 p-8 lg:p-12 border-r border-[#c6c6c6]">
               <div className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-4 text-neutral-400">
                 {project.company} · {project.location} · {project.period}
               </div>
-              <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase mb-6">
+              <h2 className="text-3xl lg:text-4xl font-black tracking-tighter uppercase mb-6">
                 {project.title}
               </h2>
               <p className="text-[#5f5e5e] leading-relaxed mb-6">{project.desc}</p>
@@ -160,7 +160,7 @@ export default function Portfolio() {
             </div>
 
             {/* Tags */}
-            <div className="md:col-span-3 p-8 md:p-12 flex flex-col gap-3">
+            <div className="lg:col-span-3 p-8 lg:p-12 flex flex-col gap-3">
               <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase mb-2 text-neutral-400 block">
                 COMPÉTENCES
               </span>

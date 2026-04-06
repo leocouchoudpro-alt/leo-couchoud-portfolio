@@ -140,7 +140,7 @@ export default function Competences() {
         <div className="text-[0.6875rem] font-black tracking-[0.5em] uppercase mb-16 text-neutral-400">
           LANGUES
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border-t border-l border-[#c6c6c6]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-[#c6c6c6]">
           {langues.map(({ langue, niveau, pct }) => (
             <div key={langue} className="p-10 border-r border-b border-[#c6c6c6]">
               <h3 className="text-2xl font-black tracking-tighter uppercase mb-2">
