@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ScrollVideo from "@/components/ScrollVideo";
 
 export default function Home() {
   return (
@@ -112,26 +113,20 @@ export default function Home() {
 
       {/* Visual Anchor */}
       <section className="grid grid-cols-1 md:grid-cols-2 border-t border-[#c6c6c6]">
-        <div className="relative h-[400px] md:h-[600px] overflow-hidden group border-r border-[#c6c6c6] bg-neutral-100 flex items-center justify-center">
-          <div className="text-center p-12">
-            <span className="text-[0.6875rem] font-black tracking-[0.3em] uppercase text-neutral-400 block mb-4">
-              {/* TODO: contenu à fournir - photo/image */}
-            </span>
-            <span className="text-6xl font-black tracking-tighter uppercase text-neutral-200">
-              01
-            </span>
-          </div>
-          <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase">
+        <div className="relative h-[400px] md:h-[600px] overflow-hidden border-r border-[#c6c6c6] bg-black">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/rigueur-technique.gif"
+            alt="Rigueur technique"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase z-10">
             01 - RIGUEUR TECHNIQUE
           </div>
         </div>
-        <div className="relative h-[400px] md:h-[600px] overflow-hidden group bg-neutral-100 flex items-center justify-center">
-          <div className="text-center p-12">
-            <span className="text-6xl font-black tracking-tighter uppercase text-neutral-200">
-              02
-            </span>
-          </div>
-          <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase">
+        <div className="relative h-[400px] md:h-[600px] overflow-hidden bg-black">
+          <ScrollVideo src="/fleche.mp4" />
+          <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase z-10">
             02 - VISION STRATÉGIQUE
           </div>
         </div>
