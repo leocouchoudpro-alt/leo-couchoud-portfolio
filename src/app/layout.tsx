@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AppWrapper from "@/components/AppWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
   display: "swap",
 });
 
@@ -30,11 +39,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="fr" className={`${inter.variable} ${instrumentSerif.variable}`}>
       <body className="bg-[#f9f9f9] text-[#1a1c1c]">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <AppWrapper>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </AppWrapper>
         <SpeedInsights />
       </body>
     </html>
