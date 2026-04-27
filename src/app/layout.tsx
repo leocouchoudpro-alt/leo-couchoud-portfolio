@@ -3,7 +3,7 @@ import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AppWrapper from "@/components/AppWrapper";
+import SessionLoader from "@/components/SessionLoader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
@@ -41,11 +41,11 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${instrumentSerif.variable}`}>
       <body className="bg-[#f9f9f9] text-[#1a1c1c]">
-        <AppWrapper>
+        <SessionLoader>
           <Header />
           <main>{children}</main>
           <Footer />
-        </AppWrapper>
+        </SessionLoader>
         <SpeedInsights />
       </body>
     </html>
