@@ -45,6 +45,7 @@ export interface SplineEmbedProps {
   fallback?: ReactNode;
   transparentBackground?: boolean;
   className?: string;
+  onSceneLoad?: (app: Application) => void;
 }
 
 export default function SplineEmbed({
@@ -52,6 +53,7 @@ export default function SplineEmbed({
   fallback = null,
   transparentBackground = false,
   className = "absolute inset-0 h-full w-full",
+  onSceneLoad,
 }: SplineEmbedProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -61,8 +63,9 @@ export default function SplineEmbed({
       if (transparentBackground) {
         app.setBackgroundColor("transparent");
       }
+      onSceneLoad?.(app);
     },
-    [transparentBackground]
+    [transparentBackground, onSceneLoad]
   );
 
   useEffect(() => {

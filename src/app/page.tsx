@@ -9,14 +9,15 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-hidden bg-white">
-        {/* Bras robotique — suit la souris, fond transparent */}
+        {/* Bras robotique — centré, devant la photo, sans sol */}
         <div
-          className="motion-reduce:hidden absolute z-10 pointer-events-auto
-            bottom-24 right-0 w-[min(100%,260px)] h-[200px]
-            sm:bottom-28 sm:w-[300px] sm:h-[240px]
-            md:top-1/2 md:bottom-auto md:right-0 md:-translate-y-1/2
-            md:w-[min(48%,520px)] md:h-[min(78vh,640px)] md:max-w-none
-            lg:right-4 xl:right-12"
+          className="motion-reduce:hidden absolute z-[25] pointer-events-auto
+            left-1/2 -translate-x-1/2 bottom-20
+            w-[min(92vw,300px)] h-[210px]
+            sm:bottom-24 sm:w-[340px] sm:h-[250px]
+            md:left-[36%] md:translate-x-0 md:bottom-auto md:top-[50%] md:-translate-y-1/2
+            md:w-[min(38vw,420px)] md:h-[min(68vh,540px)]
+            lg:left-[38%]"
           aria-hidden
         >
           <RobotArmVisual />
