@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import RobotArmVisual from "@/components/RobotArmVisual";
-
+import CvFlowingRibbonBackground from "@/components/CvFlowingRibbonBackground";
 export const metadata: Metadata = {
   title: "CV - Léo Couchoud",
   description:
@@ -12,41 +11,35 @@ export const metadata: Metadata = {
 export default function CV() {
   return (
     <>
-      {/* Header */}
-      <section className="relative overflow-x-hidden pt-32 md:pt-48 pb-16 md:pb-28 px-6 md:px-12 bg-white border-b border-[#c6c6c6] min-h-[320px] sm:min-h-0">
-        {/* Bras robotique */}
-        <div
-          className="motion-reduce:hidden absolute z-[15] pointer-events-auto overflow-visible
-            bottom-4 right-0 w-[240px] h-[200px]
-            sm:bottom-8 sm:right-4 sm:w-[300px] sm:h-[250px]
-            md:bottom-auto md:right-[14%] md:top-[58%] md:-translate-y-[38%]
-            md:w-[min(42vw,460px)] md:h-[min(52vh,500px)]
-            lg:right-[18%] xl:right-[20%]"
-          aria-hidden
-        >
-          <RobotArmVisual />
+      {/* Header — ruban Spline en arrière-plan */}
+      <section className="relative min-h-[min(72vh,680px)] overflow-hidden bg-white pt-32 md:pt-40 pb-12 md:pb-16 px-6 md:px-12">
+        {/* 1. Photo en dessous */}
+        <div className="cv-portrait pointer-events-none absolute bottom-10 right-6 z-10 hidden w-52 md:block md:bottom-12 md:right-12 md:w-60 xl:w-72">
+          <Image
+            src="/leo-couchoud-home.png"
+            alt="Léo Couchoud"
+            width={320}
+            height={400}
+            className="cv-portrait__img h-auto w-full object-cover object-[center_20%]"
+            unoptimized
+          />
         </div>
 
-        <div className="relative z-10 text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
-          07 - CV
+        {/* 2. Ruban au-dessus de la photo */}
+        <div className="cv-ribbon-bg absolute inset-0 z-20">
+          <CvFlowingRibbonBackground />
         </div>
-        <div className="relative z-10 flex items-end justify-between gap-8">
-          <div>
+
+        {/* 3. Texte au-dessus de tout */}
+        <div className="relative z-30 pointer-events-none">
+          <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
+            07 - CV
+          </div>
+          <div className="lg:max-w-xl shrink-0">
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
               CURRICULUM
             </h1>
             <div className="w-24 h-1 bg-black" />
-          </div>
-          <div className="hidden lg:block relative z-20 shrink-0 w-60 xl:w-80 -mb-24 -mr-12 overflow-hidden self-end">
-            <Image
-              src="/leo-couchoud-home.png"
-              alt="Léo Couchoud"
-              width={320}
-              height={400}
-              className="w-full h-full object-cover object-[center_20%]"
-              style={{ filter: "grayscale(100%) contrast(1.05)" }}
-              unoptimized
-            />
           </div>
         </div>
       </section>

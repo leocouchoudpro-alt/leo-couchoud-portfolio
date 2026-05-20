@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className="bg-[#f9f9f9] text-[#1a1c1c]">
         <SessionLoader>
           <Header />
-          <main>{children}</main>
+          <main className="relative z-10">{children}</main>
           <Footer />
         </SessionLoader>
         <SpeedInsights />

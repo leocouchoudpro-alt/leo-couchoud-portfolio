@@ -2,43 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollVideo from "@/components/ScrollVideo";
 import RigueurTechniqueVisual from "@/components/RigueurTechniqueVisual";
-import RobotArmVisual from "@/components/RobotArmVisual";
+import PageBackgroundAnimation from "@/components/PageBackgroundAnimation";
+import ProfilRobotVisual from "@/components/ProfilRobotVisual";
 
 export default function Home() {
   return (
     <>
+      <div className="page-interactive-layer">
       {/* Hero Section */}
-      <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-x-hidden bg-white">
-        {/* Bras robotique — zone large pour éviter les coupures */}
-        <div
-          className="motion-reduce:hidden absolute z-[25] pointer-events-auto overflow-visible
-            left-1/2 -translate-x-1/2 bottom-10
-            w-[min(96vw,360px)] h-[280px]
-            sm:bottom-14 sm:w-[420px] sm:h-[320px]
-            md:left-[32%] md:translate-x-0 md:bottom-auto
-            md:top-[62%] md:-translate-y-[38%]
-            md:w-[min(56vw,580px)] md:h-[min(78vh,680px)]
-            lg:left-[34%]"
-          aria-hidden
-        >
-          <RobotArmVisual />
-        </div>
-
-        {/* Photo ronde */}
-        <div className="absolute top-1/2 right-8 md:right-16 lg:right-48 -translate-y-1/2 z-20 pointer-events-none select-none hidden md:block">
-          <div className="w-48 h-48 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-black">
-            <Image
-              src="/leo-couchoud-home.png"
-              alt="Léo Couchoud"
-              width={320}
-              height={320}
-              className="w-full h-full object-cover object-[center_30%]"
-              priority
-              unoptimized
-            />
-          </div>
-        </div>
-
+      <section className="min-h-screen relative flex flex-col justify-center px-6 md:px-12 pt-32 pb-8 overflow-x-hidden bg-transparent">
+        <PageBackgroundAnimation />
         {/* Massive background typography */}
         <div className="absolute inset-0 z-0 flex flex-col justify-center pointer-events-none select-none">
           <h1 className="text-hero font-black tracking-tighter uppercase text-neutral-100 leading-none">
@@ -46,8 +19,22 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* Content */}
-        <div className="relative z-30 max-w-4xl w-full">
+        {/* Photo — haut droite du hero (pas liée à la bande noire) */}
+        <div className="pointer-events-auto absolute top-28 right-6 z-20 hidden md:block md:top-32 md:right-12 lg:top-36">
+          <div className="h-44 w-44 overflow-hidden rounded-full border-4 border-black lg:h-64 lg:w-64 xl:h-72 xl:w-72">
+            <Image
+              src="/leo-couchoud-home.png"
+              alt="Léo Couchoud"
+              width={320}
+              height={320}
+              className="h-full w-full object-cover object-[center_30%]"
+              priority
+              unoptimized
+            />
+          </div>
+        </div>
+
+        <div className="relative z-10 w-full max-w-6xl">
           <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-6 opacity-40">
             MARKETING DIGITAL &amp; STRATÉGIE - VOL. 01
           </div>
@@ -57,14 +44,17 @@ export default function Home() {
           <p className="text-xl md:text-2xl font-bold tracking-tight uppercase mb-12 bg-white inline-block pr-4">
             Consultant en devenir
           </p>
-          <div className="max-w-md bg-black text-white p-8 md:p-10 mb-12">
+
+          {/* Bande noire */}
+          <div className="max-w-md bg-black text-white p-8 md:p-10">
             <p className="text-lg md:text-xl font-light leading-relaxed italic">
               &ldquo;Comment fait-on concrètement fonctionner une entreprise ?
               C&rsquo;est cette question qui guide mon parcours - du numérique
               au commerce, de la Guadeloupe au Canada.&rdquo;
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          <div className="flex flex-col sm:flex-row gap-4 mt-12">
             <Link
               href="/profil"
               className="bg-black text-[#e2e2e2] px-6 sm:px-10 py-4 sm:py-5 font-black tracking-tighter uppercase transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] active:scale-95 text-center"
@@ -83,21 +73,26 @@ export default function Home() {
         {/* Scroll indicator */}
         <div className="absolute bottom-12 right-12 hidden md:flex flex-col items-center gap-4 z-40">
           <span className="text-[0.6875rem] font-black tracking-[0.5em] uppercase vertical-rl rotate-180">
-            SCROLL DOWN
+            DESCENDRE
           </span>
           <span className="text-4xl animate-bounce">↓</span>
         </div>
       </section>
 
-      {/* About Snippet */}
-      <section className="bg-[#f3f3f3] py-24 md:py-48 px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start border-t border-[#c6c6c6]">
+      {/* About Snippet — robot ancré au bas de la bande blanche */}
+      <section className="relative overflow-hidden bg-[#f3f3f3] py-24 md:py-48 px-6 md:px-12 border-t border-[#c6c6c6]">
+        <div className="relative z-10 grid grid-cols-1 gap-12 md:grid-cols-12 md:items-start pointer-events-none">
         <div className="md:col-span-4">
           <h2 className="text-4xl font-black tracking-tighter uppercase mb-4">
             /PROFIL
           </h2>
           <div className="w-24 h-1 bg-black" />
+          <div
+            className="hidden md:block md:min-h-[min(58vh,640px)]"
+            aria-hidden
+          />
         </div>
-        <div className="md:col-span-8">
+        <div className="relative pointer-events-none md:col-span-8">
           <p className="text-4xl md:text-5xl font-light leading-tight tracking-tighter text-black max-w-4xl">
             Je suis un profil hybride{" "}
             <span className="font-black">tech × management</span>. Je comprends
@@ -126,17 +121,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
+
+        <div className="profil-robot-anchor pointer-events-auto absolute bottom-0 -left-12 z-20 hidden h-[calc(88%-5rem)] w-[37%] max-w-[590px] md:-left-20 md:block md:w-[35%] md:max-w-[570px] lg:-left-28">
+          <ProfilRobotVisual variant="anchor" />
+        </div>
       </section>
 
       {/* Visual Anchor */}
       <section className="grid grid-cols-1 md:grid-cols-2 border-t border-[#c6c6c6]">
-        <div className="relative h-[400px] md:h-[600px] overflow-hidden border-r border-[#c6c6c6] bg-black">
+        <div className="pointer-events-auto relative h-[400px] md:h-[600px] overflow-hidden border-r border-[#c6c6c6] bg-black">
           <RigueurTechniqueVisual />
           <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase z-10">
             01 - RIGUEUR TECHNIQUE
           </div>
         </div>
-        <div className="relative h-[400px] md:h-[600px] overflow-hidden bg-black">
+        <div className="pointer-events-auto relative h-[400px] md:h-[600px] overflow-hidden bg-black">
           <ScrollVideo src="/fleche.mp4" />
           <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase z-10">
             02 - VISION STRATÉGIQUE
@@ -213,6 +213,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      </div>
     </>
   );
 }
