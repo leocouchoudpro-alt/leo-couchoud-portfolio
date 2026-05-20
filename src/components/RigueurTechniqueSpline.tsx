@@ -1,9 +1,9 @@
 "use client";
 
 import Spline from "@splinetool/react-spline";
-import { Component, type ReactNode } from "react";
+import type { Application } from "@splinetool/runtime";
+import { Component, useCallback, useEffect, useRef, type ReactNode } from "react";
 
-// Fichier local = pas de souci CORS (téléchargé depuis Spline)
 const SCENE_URL = "/rigueur-technique.splinecode";
 
 class SplineErrorBoundary extends Component<
@@ -33,6 +33,20 @@ function GifFallback() {
   );
 }
 
+function disableCameraControls(app: Application) {
+  const controls = app.controls as {
+    enableRotate?: boolean;
+    enableZoom?: boolean;
+    enablePan?: boolean;
+  } | null;
+
+  if (controls) {
+    controls.enableRotate = false;
+    controls.enableZoom = false;
+    controls.enablePan = false;
+  }
+}
+
 interface RigueurTechniqueSplineProps {
   scene?: string;
 }
@@ -40,12 +54,40 @@ interface RigueurTechniqueSplineProps {
 export default function RigueurTechniqueSpline({
   scene = SCENE_URL,
 }: RigueurTechniqueSplineProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleLoad = useCallback((app: Application) => {
+    disableCameraControls(app);
+  }, []);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    // Empêche le scroll de la page quand la souris est sur la scène
+    const blockScroll = (e: WheelEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+    };
+
+    el.addEventListener("wheel", blockScroll, { passive: false });
+
+    return () => {
+      el.removeEventListener("wheel", blockScroll);
+    };
+  }, []);
+
   return (
     <SplineErrorBoundary fallback={<GifFallback />}>
-      <div className="absolute inset-0 h-full w-full">
+      <div
+        ref={containerRef}
+        className="absolute inset-0 h-full w-full touch-none overscroll-contain"
+        style={{ touchAction: "none" }}
+      >
         <Spline
           scene={scene}
-          style={{ width: "100%", height: "100%" }}
+          onLoad={handleLoad}
+          style={{ width: "100%", height: "100%", pointerEvents: "auto" }}
         />
       </div>
     </SplineErrorBoundary>
