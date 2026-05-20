@@ -1,17 +1,53 @@
 "use client";
 
-import Spline from "@splinetool/react-spline/next";
+import Spline from "@splinetool/react-spline";
+import { Component, type ReactNode } from "react";
+
+// Fichier local = pas de souci CORS (téléchargé depuis Spline)
+const SCENE_URL = "/rigueur-technique.splinecode";
+
+class SplineErrorBoundary extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { hasError: boolean }
+> {
+  state = { hasError: false };
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) return this.props.fallback;
+    return this.props.children;
+  }
+}
+
+function GifFallback() {
+  return (
+    /* eslint-disable-next-line @next/next/no-img-element */
+    <img
+      src="/rigueur-technique.gif"
+      alt="Rigueur technique"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+  );
+}
 
 interface RigueurTechniqueSplineProps {
-  scene: string;
+  scene?: string;
 }
 
 export default function RigueurTechniqueSpline({
-  scene,
+  scene = SCENE_URL,
 }: RigueurTechniqueSplineProps) {
   return (
-    <div className="absolute inset-0 w-full h-full [&_canvas]:!w-full [&_canvas]:!h-full">
-      <Spline scene={scene} className="w-full h-full" />
-    </div>
+    <SplineErrorBoundary fallback={<GifFallback />}>
+      <div className="absolute inset-0 h-full w-full">
+        <Spline
+          scene={scene}
+          style={{ width: "100%", height: "100%" }}
+        />
+      </div>
+    </SplineErrorBoundary>
   );
 }
