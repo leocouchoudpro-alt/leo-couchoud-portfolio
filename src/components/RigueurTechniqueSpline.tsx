@@ -2,7 +2,7 @@
 
 import Spline from "@splinetool/react-spline";
 import type { Application } from "@splinetool/runtime";
-import { Component, useCallback, useEffect, useRef, type ReactNode } from "react";
+import { Component, useCallback, type ReactNode } from "react";
 
 const SCENE_URL = "/rigueur-technique.splinecode";
 
@@ -54,40 +54,17 @@ interface RigueurTechniqueSplineProps {
 export default function RigueurTechniqueSpline({
   scene = SCENE_URL,
 }: RigueurTechniqueSplineProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-
   const handleLoad = useCallback((app: Application) => {
     disableCameraControls(app);
   }, []);
 
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-
-    // Empêche le scroll de la page quand la souris est sur la scène
-    const blockScroll = (e: WheelEvent) => {
-      e.preventDefault();
-      e.stopPropagation();
-    };
-
-    el.addEventListener("wheel", blockScroll, { passive: false });
-
-    return () => {
-      el.removeEventListener("wheel", blockScroll);
-    };
-  }, []);
-
   return (
     <SplineErrorBoundary fallback={<GifFallback />}>
-      <div
-        ref={containerRef}
-        className="absolute inset-0 h-full w-full touch-none overscroll-contain"
-        style={{ touchAction: "none" }}
-      >
+      <div className="absolute inset-0 h-full w-full">
         <Spline
           scene={scene}
           onLoad={handleLoad}
-          style={{ width: "100%", height: "100%", pointerEvents: "auto" }}
+          style={{ width: "100%", height: "100%" }}
         />
       </div>
     </SplineErrorBoundary>
