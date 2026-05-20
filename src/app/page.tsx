@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import ScrollVideo from "@/components/ScrollVideo";
+import RigueurTechniqueVisual from "@/components/RigueurTechniqueVisual";
+
+const splineRigueurScene =
+  process.env.NEXT_PUBLIC_SPLINE_RIGUEUR_SCENE ??
+  "https://prod.spline.design/Ts2Xzs-Bu74R-Jv7/scene.splinecode";
 
 export default function Home() {
   return (
@@ -114,12 +119,7 @@ export default function Home() {
       {/* Visual Anchor */}
       <section className="grid grid-cols-1 md:grid-cols-2 border-t border-[#c6c6c6]">
         <div className="relative h-[400px] md:h-[600px] overflow-hidden border-r border-[#c6c6c6] bg-black">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/rigueur-technique.gif"
-            alt="Rigueur technique"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          <RigueurTechniqueVisual scene={splineRigueurScene} />
           <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase z-10">
             01 - RIGUEUR TECHNIQUE
           </div>
