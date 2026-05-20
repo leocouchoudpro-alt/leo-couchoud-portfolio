@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import RobotArmVisual from "@/components/RobotArmVisual";
 
 export const metadata: Metadata = {
   title: "CV - Léo Couchoud",
@@ -12,18 +13,31 @@ export default function CV() {
   return (
     <>
       {/* Header */}
-      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 bg-white border-b border-[#c6c6c6]">
-        <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
+      <section className="relative overflow-hidden pt-32 md:pt-48 pb-16 md:pb-28 px-6 md:px-12 bg-white border-b border-[#c6c6c6] min-h-[320px] sm:min-h-0">
+        {/* Bras robotique */}
+        <div
+          className="motion-reduce:hidden absolute z-[15] pointer-events-auto
+            bottom-6 right-2 w-[200px] h-[165px]
+            sm:bottom-10 sm:right-6 sm:w-[260px] sm:h-[210px]
+            md:bottom-auto md:right-[18%] md:top-[52%] md:-translate-y-1/2
+            md:w-[min(34vw,380px)] md:h-[min(48vh,440px)]
+            lg:right-[22%] xl:right-[24%]"
+          aria-hidden
+        >
+          <RobotArmVisual />
+        </div>
+
+        <div className="relative z-10 text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
           07 - CV
         </div>
-        <div className="flex items-end justify-between gap-8">
+        <div className="relative z-10 flex items-end justify-between gap-8">
           <div>
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
               CURRICULUM
             </h1>
             <div className="w-24 h-1 bg-black" />
           </div>
-          <div className="hidden lg:block shrink-0 w-60 xl:w-80 -mb-24 -mr-12 overflow-hidden self-end">
+          <div className="hidden lg:block relative z-20 shrink-0 w-60 xl:w-80 -mb-24 -mr-12 overflow-hidden self-end">
             <Image
               src="/leo-couchoud-home.png"
               alt="Léo Couchoud"
