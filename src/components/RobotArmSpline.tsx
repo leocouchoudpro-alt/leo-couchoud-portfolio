@@ -20,6 +20,8 @@ function hideFloor(app: Application) {
 export default function RobotArmSpline() {
   const handleSceneLoad = useCallback((app: Application) => {
     hideFloor(app);
+    // Dézoome pour éviter que le bras soit coupé sur les bords du canvas
+    app.setZoom(0.72);
   }, []);
 
   return (
@@ -27,6 +29,7 @@ export default function RobotArmSpline() {
       scene={SCENE_URL}
       transparentBackground
       onSceneLoad={handleSceneLoad}
+      className="absolute -inset-[15%] h-[130%] w-[130%] overflow-visible [&_div]:!overflow-visible"
     />
   );
 }

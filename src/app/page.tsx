@@ -8,16 +8,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-hidden bg-white">
-        {/* Bras robotique — centré, devant la photo, sans sol */}
+      <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-x-hidden bg-white">
+        {/* Bras robotique — zone large pour éviter les coupures */}
         <div
-          className="motion-reduce:hidden absolute z-[25] pointer-events-auto
-            left-1/2 -translate-x-1/2 bottom-20
-            w-[min(92vw,300px)] h-[210px]
-            sm:bottom-24 sm:w-[340px] sm:h-[250px]
-            md:left-[36%] md:translate-x-0 md:bottom-auto md:top-[50%] md:-translate-y-1/2
-            md:w-[min(38vw,420px)] md:h-[min(68vh,540px)]
-            lg:left-[38%]"
+          className="motion-reduce:hidden absolute z-[25] pointer-events-auto overflow-visible
+            left-1/2 -translate-x-1/2 bottom-10
+            w-[min(96vw,360px)] h-[280px]
+            sm:bottom-14 sm:w-[420px] sm:h-[320px]
+            md:left-[32%] md:translate-x-0 md:bottom-auto
+            md:top-[62%] md:-translate-y-[38%]
+            md:w-[min(56vw,580px)] md:h-[min(78vh,680px)]
+            lg:left-[34%]"
           aria-hidden
         >
           <RobotArmVisual />

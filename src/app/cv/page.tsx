@@ -13,15 +13,15 @@ export default function CV() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden pt-32 md:pt-48 pb-16 md:pb-28 px-6 md:px-12 bg-white border-b border-[#c6c6c6] min-h-[320px] sm:min-h-0">
+      <section className="relative overflow-x-hidden pt-32 md:pt-48 pb-16 md:pb-28 px-6 md:px-12 bg-white border-b border-[#c6c6c6] min-h-[320px] sm:min-h-0">
         {/* Bras robotique */}
         <div
-          className="motion-reduce:hidden absolute z-[15] pointer-events-auto
-            bottom-6 right-2 w-[200px] h-[165px]
-            sm:bottom-10 sm:right-6 sm:w-[260px] sm:h-[210px]
-            md:bottom-auto md:right-[18%] md:top-[52%] md:-translate-y-1/2
-            md:w-[min(34vw,380px)] md:h-[min(48vh,440px)]
-            lg:right-[22%] xl:right-[24%]"
+          className="motion-reduce:hidden absolute z-[15] pointer-events-auto overflow-visible
+            bottom-4 right-0 w-[240px] h-[200px]
+            sm:bottom-8 sm:right-4 sm:w-[300px] sm:h-[250px]
+            md:bottom-auto md:right-[14%] md:top-[58%] md:-translate-y-[38%]
+            md:w-[min(42vw,460px)] md:h-[min(52vh,500px)]
+            lg:right-[18%] xl:right-[20%]"
           aria-hidden
         >
           <RobotArmVisual />
