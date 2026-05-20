@@ -2,12 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollVideo from "@/components/ScrollVideo";
 import RigueurTechniqueVisual from "@/components/RigueurTechniqueVisual";
+import RobotArmVisual from "@/components/RobotArmVisual";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <section className="min-h-screen relative flex flex-col justify-center items-start px-6 md:px-12 pt-32 overflow-hidden bg-white">
+        {/* Bras robotique — suit la souris, fond transparent */}
+        <div
+          className="motion-reduce:hidden absolute z-10 pointer-events-auto
+            bottom-24 right-0 w-[min(100%,260px)] h-[200px]
+            sm:bottom-28 sm:w-[300px] sm:h-[240px]
+            md:top-1/2 md:bottom-auto md:right-0 md:-translate-y-1/2
+            md:w-[min(48%,520px)] md:h-[min(78vh,640px)] md:max-w-none
+            lg:right-4 xl:right-12"
+          aria-hidden
+        >
+          <RobotArmVisual />
+        </div>
+
         {/* Photo ronde */}
         <div className="absolute top-1/2 right-8 md:right-16 lg:right-48 -translate-y-1/2 z-20 pointer-events-none select-none hidden md:block">
           <div className="w-48 h-48 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-black">
