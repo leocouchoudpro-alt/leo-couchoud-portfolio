@@ -47,6 +47,7 @@ const categories = [
     num: "04",
     title: "Tech & Outils",
     skills: [
+      "Prompt engineering (conception, itération et optimisation de prompts)",
       "Intelligence artificielle (Claude, ChatGPT, workflows IA)",
       "VS Code / Claude Code",
       "Google Stitch (design IA)",

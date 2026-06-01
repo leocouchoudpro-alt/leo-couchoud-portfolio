@@ -116,7 +116,7 @@ export default function Home() {
               </span>
               <p className="text-[#5f5e5e] leading-relaxed text-lg">
                 Actuellement en stage chez TechGuys à Montréal, spécialisé en
-                Audit SEO et Consulting Technologique.
+                audit SEO, gestion de projet client et consulting technologique.
               </p>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function Home() {
             {
               num: "04",
               title: "IA & AUTOMATISATION",
-              desc: "Automatisation des process marketing et intégration de l'IA générative.",
+              desc: "Prompt engineering, automatisation des process marketing et intégration de l'IA générative.",
             },
           ].map(({ num, title, desc }) => (
             <div

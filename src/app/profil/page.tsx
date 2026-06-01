@@ -63,9 +63,10 @@ export default function Profil() {
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
             Aujourd&rsquo;hui en stage chez TechGuys, cabinet de consulting
-            technologique à Montréal, je réalise des audits SEO, rédige des
-            briefs éditoriaux et fais le pont entre les enjeux techniques et
-            les décisions stratégiques de nos clients.
+            technologique à Montréal, je réalise des audits SEO, pilote la
+            gestion de projet des missions clients (planification, priorités,
+            livrables) et fais le pont entre les enjeux techniques et les
+            décisions stratégiques.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
             En dehors du travail, je suis curieux de tout ce qui bouge :

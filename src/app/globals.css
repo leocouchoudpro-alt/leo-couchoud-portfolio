@@ -177,7 +177,7 @@ body {
 
 .spline-embed-crop--cv-ribbon .spline-embed-crop__stage iframe {
   background: #ffffff !important;
-  transform: translate(-50%, -50%) scale(1.4);
+  transform: translate(-50%, -44%) scale(1.4);
 }
 
 .cv-ribbon-bg {

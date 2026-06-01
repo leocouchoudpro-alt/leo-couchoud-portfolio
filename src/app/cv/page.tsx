@@ -12,9 +12,9 @@ export default function CV() {
   return (
     <>
       {/* Header — ruban Spline en arrière-plan */}
-      <section className="relative min-h-[min(72vh,680px)] overflow-hidden bg-white pt-32 md:pt-40 pb-12 md:pb-16 px-6 md:px-12">
+      <section className="relative min-h-[min(52vh,520px)] overflow-hidden bg-white pt-28 md:pt-32 pb-8 md:pb-10 px-6 md:px-12">
         {/* 1. Photo en dessous */}
-        <div className="cv-portrait pointer-events-none absolute bottom-10 right-6 z-10 hidden w-52 md:block md:bottom-12 md:right-12 md:w-60 xl:w-72">
+        <div className="cv-portrait pointer-events-none absolute bottom-6 right-6 z-10 hidden w-48 md:block md:bottom-8 md:right-12 md:w-56 xl:w-64">
           <Image
             src="/leo-couchoud-home.png"
             alt="Léo Couchoud"
@@ -32,11 +32,11 @@ export default function CV() {
 
         {/* 3. Texte au-dessus de tout */}
         <div className="relative z-30 pointer-events-none">
-          <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-8 opacity-40">
+          <div className="text-[0.75rem] font-black tracking-[0.4em] uppercase mb-6 opacity-40">
             07 - CV
           </div>
           <div className="lg:max-w-xl shrink-0">
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85] mb-12">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter uppercase leading-[0.85] mb-8">
               CURRICULUM
             </h1>
             <div className="w-24 h-1 bg-black" />
@@ -165,7 +165,7 @@ export default function CV() {
             <div className="flex flex-wrap gap-2">
               {[
                 "SEO/SEA", "Audit SEO", "Semrush", "Screaming Frog", "Google Analytics",
-                "Rédaction web", "WordPress", "Automatisation IA", "Social Media",
+                "Rédaction web", "WordPress", "Prompt engineering", "Automatisation IA", "Social Media",
                 "Stratégie digitale", "Business Model", "Pitch", "Gestion de projet",
               ].map((s) => (
                 <span key={s} className="bg-white border border-[#c6c6c6] px-3 py-1.5 font-black text-xs tracking-wider uppercase">

@@ -16,10 +16,10 @@ const projects = [
     company: "TechGuys",
     location: "Montréal, Canada",
     period: "Mars - Mai 2026",
-    tags: ["SEO Technique", "On-page", "Semrush", "Screaming Frog", "GSC", "VSCode"],
-    desc: "Réalisation d'audits SEO complets (technique, on-page, concurrentiel), recherche de mots-clés et optimisation du référencement naturel. Rédaction web, briefs éditoriaux, suivi de positionnement et collaboration directe avec la direction.",
-    docPath: null,
-    docStatus: "en_cours" as const,
+    tags: ["SEO Technique", "On-page", "Prompt engineering", "Gestion de projet", "Semrush", "Screaming Frog", "GSC", "Asana", "VSCode"],
+    desc: "Réalisation d'audits SEO complets (technique, on-page, concurrentiel), recherche de mots-clés et optimisation du référencement naturel. Prompt engineering pour automatiser les audits et structurer les livrables IA. Gestion de projet : planification des livrables, coordination client et respect des deadlines. Rédaction web, briefs éditoriaux, suivi de positionnement et collaboration directe avec la direction.",
+    docPath: "/docs/Memoire_Stage_TechGuys.pdf",
+    docStatus: null,
     logo: "techguys.png",
   },
   {
@@ -154,7 +154,9 @@ export default function Portfolio() {
                   className="bg-black text-white px-6 py-4 inline-flex items-center gap-4 font-black tracking-tighter uppercase transition-all hover:italic hover:scale-105 active:scale-95"
                 >
                   <span className="text-[0.6875rem] tracking-[0.3em] opacity-60">PDF</span>
-                  Voir le dossier →
+                  {project.company === "TechGuys"
+                    ? "Voir le rapport de stage →"
+                    : "Voir le dossier →"}
                 </a>
               ) : null}
             </div>
