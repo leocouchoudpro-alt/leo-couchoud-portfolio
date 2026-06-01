@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* About Snippet — robot ancré au bas de la bande blanche */}
-      <section className="relative overflow-hidden bg-[#f3f3f3] py-24 md:py-48 px-6 md:px-12 border-t border-[#c6c6c6]">
+      <section className="perf-section relative overflow-hidden bg-[#f3f3f3] py-24 md:py-48 px-6 md:px-12 border-t border-[#c6c6c6]">
         <div className="relative z-10 grid grid-cols-1 gap-12 md:grid-cols-12 md:items-start pointer-events-none">
         <div className="md:col-span-4">
           <h2 className="text-4xl font-black tracking-tighter uppercase mb-4">
@@ -129,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* Visual Anchor */}
-      <section className="grid grid-cols-1 md:grid-cols-2 border-t border-[#c6c6c6]">
+      <section className="perf-section grid grid-cols-1 md:grid-cols-2 border-t border-[#c6c6c6]">
         <div className="pointer-events-auto relative h-[400px] md:h-[600px] overflow-hidden border-r border-[#c6c6c6] bg-black">
           <RigueurTechniqueVisual />
           <div className="absolute bottom-8 left-8 bg-black text-white px-4 py-2 font-black text-xs tracking-widest uppercase z-10">

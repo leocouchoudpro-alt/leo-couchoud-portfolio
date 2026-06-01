@@ -115,6 +115,12 @@ body {
   color: #e2e2e2;
 }
 
+/* Sections lourdes : le navigateur peut sauter le rendu hors écran */
+.perf-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px;
+}
+
 /* Spline iframe — masque bords blancs / crochets en L de l’embed */
 .spline-embed-crop {
   overflow: hidden;

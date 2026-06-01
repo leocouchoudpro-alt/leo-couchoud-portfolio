@@ -12,6 +12,8 @@ interface AnimatedShapeVisualProps {
   embedUrl?: string;
   /** hero = accueil | cv-ribbon = fond page CV */
   variant?: "default" | "hero" | "cv-ribbon";
+  /** Monte l’iframe uniquement quand true */
+  enabled?: boolean;
 }
 
 export default function AnimatedShapeVisual({
@@ -20,6 +22,7 @@ export default function AnimatedShapeVisual({
   interactive = false,
   embedUrl = SPLINE_EMBED_URL_DEFAULT,
   variant = "default",
+  enabled = true,
 }: AnimatedShapeVisualProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -48,18 +51,20 @@ export default function AnimatedShapeVisual({
       }
       aria-hidden={!interactive}
     >
-      <div className="spline-embed-crop__stage">
-        <iframe
-          src={embedUrl}
-          title="Animation interactive"
-          style={{
-            background:
-              variant === "cv-ribbon" ? "transparent" : backgroundColor,
-          }}
-          loading="eager"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-        />
-      </div>
+      {enabled ? (
+        <div className="spline-embed-crop__stage">
+          <iframe
+            src={embedUrl}
+            title="Animation interactive"
+            style={{
+              background:
+                variant === "cv-ribbon" ? "transparent" : backgroundColor,
+            }}
+            loading={variant === "hero" ? "eager" : "lazy"}
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+          />
+        </div>
+      ) : null}
     </div>
   );
 }

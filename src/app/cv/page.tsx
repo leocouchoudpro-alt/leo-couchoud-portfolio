@@ -12,7 +12,7 @@ export default function CV() {
   return (
     <>
       {/* Header — ruban Spline en arrière-plan */}
-      <section className="relative min-h-[min(52vh,520px)] overflow-hidden bg-white pt-28 md:pt-32 pb-8 md:pb-10 px-6 md:px-12">
+      <section className="perf-section relative min-h-[min(52vh,520px)] overflow-hidden bg-white pt-28 md:pt-32 pb-8 md:pb-10 px-6 md:px-12">
         {/* 1. Photo en dessous */}
         <div className="cv-portrait pointer-events-none absolute bottom-6 right-6 z-10 hidden w-48 md:block md:bottom-8 md:right-12 md:w-56 xl:w-64">
           <Image
