@@ -62,10 +62,10 @@ export default function Profil() {
             c&rsquo;est mieux.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">
-            Aujourd&rsquo;hui en stage chez TechGuys, cabinet de consulting
-            technologique à Montréal, je réalise des audits SEO, pilote la
+            J&rsquo;ai effectué mon stage chez TechGuys, cabinet de consulting
+            technologique à Montréal, où j&rsquo;ai réalisé des audits SEO, piloté la
             gestion de projet des missions clients (planification, priorités,
-            livrables) et fais le pont entre les enjeux techniques et les
+            livrables) et fait le pont entre les enjeux techniques et les
             décisions stratégiques.
           </p>
           <p className="text-lg leading-relaxed text-[#5f5e5e]">

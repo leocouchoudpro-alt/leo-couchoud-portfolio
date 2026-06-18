@@ -164,7 +164,7 @@ export default function CV() {
           <div className="md:col-span-9 p-8 md:p-12 bg-[#f3f3f3]">
             <div className="flex flex-wrap gap-2">
               {[
-                "SEO/SEA", "Audit SEO", "Semrush", "Screaming Frog", "Google Analytics",
+                "SEO", "Audit SEO", "Semrush", "Screaming Frog", "Google Analytics",
                 "Rédaction web", "WordPress", "Prompt engineering", "Automatisation IA", "Social Media",
                 "Stratégie digitale", "Business Model", "Pitch", "Gestion de projet",
               ].map((s) => (

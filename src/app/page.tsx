@@ -115,7 +115,7 @@ export default function Home() {
                 STATUT
               </span>
               <p className="text-[#5f5e5e] leading-relaxed text-lg">
-                Actuellement en stage chez TechGuys à Montréal, spécialisé en
+                Stage terminé chez TechGuys à Montréal (mars–mai 2026), spécialisé en
                 audit SEO, gestion de projet client et consulting technologique.
               </p>
             </div>

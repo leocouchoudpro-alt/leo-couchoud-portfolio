@@ -26,7 +26,7 @@ const experiences = [
       "Contact direct avec les clients, présentation d'audits",
     ],
     tags: ["SEO", "Audit", "Prompt engineering", "Gestion de projet", "Semrush", "Screaming Frog", "GSC", "Asana", "Rédaction web"],
-    current: true,
+    current: false,
   },
   {
     num: "02",
@@ -38,12 +38,12 @@ const experiences = [
     tasks: [
       "Automatisation des process marketing grâce à l'Intelligence Artificielle",
       "Rédaction et optimisation SEO de contenus web (articles, pages, fiches produits)",
-      "Pilotage de campagnes SEO/SEA (Semrush, WordPress)",
+      "Pilotage de campagnes SEO (Semrush, WordPress)",
       "Développement de stratégies de mots-clés et netlinking",
       "Création et planification de contenu pour les réseaux sociaux",
       "Analyse des performances via Google Analytics et recommandations data-driven",
     ],
-    tags: ["SEO/SEA", "Automatisation IA", "Google Analytics", "WordPress", "Social Media"],
+    tags: ["SEO", "Automatisation IA", "Google Analytics", "WordPress", "Social Media"],
     current: false,
   },
   {

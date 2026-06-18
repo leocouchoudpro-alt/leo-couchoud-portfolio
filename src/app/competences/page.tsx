@@ -12,7 +12,7 @@ const categories = [
     title: "Marketing Digital & SEO",
     skills: [
       "Audit SEO complet (technique, on-page, concurrentiel)",
-      "SEO/SEA : Semrush, Screaming Frog, Google Search Console",
+      "SEO : Semrush, Screaming Frog, Google Search Console",
       "Gestion d'implémentation SEO",
       "Google Analytics - analyse de données & recommandations",
       "WordPress - mise à jour et optimisation",
@@ -49,7 +49,7 @@ const categories = [
     skills: [
       "Prompt engineering (conception, itération et optimisation de prompts)",
       "Intelligence artificielle (Claude, ChatGPT, workflows IA)",
-      "VS Code / Claude Code",
+      "Cursor · Linear · VS Code / Claude Code",
       "Google Stitch (design IA)",
       "Semrush · Screaming Frog · Google Search Console · GA",
       "WordPress",
@@ -84,7 +84,7 @@ const langues = [
 const outils = [
   "Semrush", "Screaming Frog", "Google Search Console",
   "Google Analytics", "WordPress", "Claude AI", "ChatGPT",
-  "Google Stitch", "Canva", "Asana", "Slack", "Instagram",
+  "Google Stitch", "Cursor", "Linear", "Canva", "Asana", "Slack", "Instagram",
 ];
 
 export default function Competences() {
